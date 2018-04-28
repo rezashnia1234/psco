@@ -99,12 +99,10 @@
 	</gap:config-file>
 	
 
-	<!--<gap:plugin name="com.dawsonloudon.videoplayer" 	platform="android"	version="1.0.0" />-->
-	<!--<gap:plugin name="com.hutchind.cordova.plugins.streamingmedia"  source="plugins.cordova.io" />-->
-	<!-- <plugin spec="https://github.com/nchutchind/cordova-plugin-streaming-media.git" source="git" /> -->
-	<!-- <plugin spec="https://github.com/nchutchind/Vitamio-Cordova-Plugin.git" source="git" /> -->
+	<!-- <preference name="buildArchitecture" value="x86" /> -->
 	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.2" source="git" platform="android" />
 	<plugin spec="https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview.git" source="git" platform="android" />
+	<!-- <preference name="xwalkMode" value="lite" /> -->
 
     <!-- Define app icon      -->
     <icon src="images/splash/icon.png" />
