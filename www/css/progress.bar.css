@@ -19,7 +19,7 @@
 	margin:auto;
 	direction:ltr;
 	text-align: right;
-	background-color: #c3e8ff;
+	background-color: rgba(63, 77, 85, 0.5);
 	height: 8vh;
 	padding: 0px;
 	width: 85%;
@@ -55,7 +55,7 @@
 	-webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
 	box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;*/
 
-	background-color: #2c99b8;
+	background-color: rgba(63, 77, 85, 0.5);
 	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#a5df41), to(#4ca916));
 	background-image: -webkit-linear-gradient(top, #a5df41, #4ca916);
 	background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
@@ -83,16 +83,16 @@
     right: 0;
 }
 .progress-bar #descripion {
-    direction: rtl;
+    direction: ltr;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center right;
     padding-right: 9vh;
     font-size: 5vh;
-    color: #167bb0;
+    color: rgba(63, 77, 85, 1);
 	text-align:center;
 }
-.progress-bar #descripion .hajm{color:#f9b233;display:inline-block;font-size: 5vh;direction:ltr;}
+.progress-bar #descripion .hajm{color:#e14612;display:inline-block;font-size: 5vh;direction:ltr;}
 .progress-bar #descripion .hajm div{display:inline-block;width: 0.7vh;}
 .progress-bar #descripion .first{display:inline;font-size: 5vh;}
 .progress-bar #descripion .first::before {
@@ -108,7 +108,7 @@
     background-position: center bottom;
     position: absolute;
     top: 1.2vh;
-    right: -5vh;
+    left: -6vh;
 }
 .progress-bar #status {
     color: #ffffff;
@@ -138,7 +138,7 @@
 }	
 
 .green span {
-	  background-color: #f9b233;
+	  background-color: #e14612;
 	  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#a5df41), to(#4ca916));
 	  background-image: -webkit-linear-gradient(top, #a5df41, #4ca916);
 	  background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
@@ -229,9 +229,10 @@
 	/*-moz-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
 	-webkit-box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
 	box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;*/
-	
+	/*
 	-webkit-animation: animate-glow 1s ease-out infinite;
 	-moz-animation: animate-glow 1s ease-out infinite; 			
+	*/
 }
 
 @-webkit-keyframes animate-glow {
