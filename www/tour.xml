@@ -480,6 +480,7 @@
 				use_as_videopano="true"
 				/>
 		<!-- <include url="skin/videointerface.xml" /> -->
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 		<image>
 			<sphere url="plugin:video" />
 		</image>
