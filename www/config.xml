@@ -68,10 +68,9 @@
 
     <!-- Third party plugins -->
 	<preference name="android-build-tool" value="gradle" />
-	<!--
 	<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm">
 		<param name="SENDER_ID" value="804625540618" />
-	-->
+	</plugin>
 	<!--
 	<plugin spec="https://github.com/miladesign/pushe-cordova-plugin.git" platform="android" source="git" >
 		<param name="PUSHE_TOKEN" value="222222222222" />
@@ -101,7 +100,7 @@
 
 	<!-- <preference name="buildArchitecture" value="x86" /> -->
 	<!-- <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.2" source="git" platform="android" /> -->
-	<!-- <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.4" source="git" /> -->
+	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.4" source="git" />
 	<plugin spec="https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview.git" source="git" platform="android" />
 	<!-- <preference name="xwalkMode" value="lite" /> -->
 
