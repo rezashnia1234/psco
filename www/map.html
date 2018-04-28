@@ -1112,6 +1112,14 @@
         }, 2500);
 
         function change_scene(e, krpano, scene_name) {
+			/*
+			if(scene_name=="video_scene" && gyroscope==false)
+			{
+                krpano.call("set(plugin[skin_gyro].enabled,true);");
+                gyroscope = true;
+                $(this).find('img').attr('src', 'asset/images/gyroscope.png');
+            }
+			*/
             console.log(scene_name);
             e.preventDefault();
             krpano.call("loadscene(" + scene_name + ", null, MERGE, OPENBLEND(0.5, 0.0, 0.75, 0.05, linear));");
