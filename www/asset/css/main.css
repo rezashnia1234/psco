@@ -219,9 +219,9 @@ ul, li {
 .back-icon {
     position: absolute !important;
     /*z-index: 1000000 !important;*/
-    width: 1.7em !important;
-    height: 1.7em !important;
+    width: 1.9em !important;
+    height: 1.9em !important;
     object-fit: cover !important;
-    top: 1em !important;
-    left: 1.2em !important;
+    top: 1.2em !important;
+    left: 1.4em !important;
 }

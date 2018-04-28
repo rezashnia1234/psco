@@ -213,8 +213,8 @@ ul, li {
 /*back icon*/
 .back-icon {
     position: absolute !important;
-    width: 5.4vw !important;
-    height: 5.4vw !important;
+    width: 4.1vw !important;
+    height: 4.1vw !important;
     object-fit: cover !important;
     top: 2.7vw !important;
     left: 3.24vw !important;

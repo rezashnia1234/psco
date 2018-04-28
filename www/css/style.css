@@ -36,8 +36,8 @@
 
 .navigation {
     position: absolute;
-    left: 2.7vw;
-    top: 10.8vw;
+    left: 2.4vw;
+    top: 10vw;
     opacity: 0;
 }
 .hideNavigation{left:-100%;}
@@ -48,9 +48,9 @@
 
 .navigation li {
     list-style: none;
-    padding: 0.8125vw;
-    width: 7.3125vw;
-    height: 7.3125vw;
+    padding: 0.6vw;
+	width: 6.4vw;
+    height: 6.4vw;
     overflow: hidden;
     transition: background-color 0.5s ease;
 }
