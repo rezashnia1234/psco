@@ -16,7 +16,7 @@
 			setTimeout(function(){
 				if(window.localStorage.getItem('pano_localPath') == null)
 				{
-					window.location.href = "download.html";
+					//window.location.href = "download.html";
 				}
 				else
 					alert(window.localStorage.getItem('pano_localPath'));
@@ -25,9 +25,9 @@
 </head>
 <body>
 
-<div class="page">
+<div class="page" style="background-color: #e14612 !important;">
     <div class="menu">
-		<div style="position:absolute;left:0;top:0;width:100px;height:100px;background-color:red;z-index: -1;" onclick='var aud = document.getElementById("logo");aud.play();'>aaa</div>
+		<div style="position:absolute;left:0;top:0;width:100px;height:100px;background-color:#e14612;z-index: -1;" onclick='var aud = document.getElementById("logo");aud.play();'>aaa</div>
         <video autoplay muted loop id="menu-video" webkit-playsinline playsinline>
             <source src="asset/video/menu-back.mp4" type="video/mp4">
         </video>
