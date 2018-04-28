@@ -1,4 +1,4 @@
-﻿<krpano version="1.19" title="Virtual Tour" showerrors="true" logkey="true">
+﻿<krpano version="1.19" title="Virtual Tour" showerrors2="true" logkey2="true">
 
 	<include url="skin/vtourskin.xml" />
 	<plugin name="show_vr_setup"
