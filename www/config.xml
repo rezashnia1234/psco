@@ -54,11 +54,8 @@
 	<!--<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />-->
     <!--<plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />-->
 	<plugin name="cordova-plugin-dialogs" source="npm" />
-	<!-- <plugin name="cordova-plugin-file" source="npm" /> -->
-    <!-- <plugin name="cordova-plugin-file-transfer" source="npm" /> -->
-    <gap:plugin name="org.apache.cordova.file" source="npm"  />
-	<gap:plugin name="org.apache.cordova.file-transfer" />
-	<!--<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.8" />-->
+	<plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
 
     <!--<plugin spec="https://github.com/fastrde/cordova-plugin-fastrde-downloader.git" source="git" />-->
 	<!-- <plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" /> -->
