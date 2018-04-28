@@ -1,0 +1,197 @@
+
+.map-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.pin {
+    position: absolute;
+    /*top: -10px;*/
+    left: 0;
+    z-index: 2;
+}
+
+.master-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navigation {
+    position: absolute;
+    left: 2.7vw;
+    top: 10.8vw;
+    opacity: 0;
+}
+.hideNavigation{left:-100%;}
+.navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    list-style: none;
+    padding: 0.8125vw;
+    width: 7.3125vw;
+    height: 7.3125vw;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.navigation li:hover {
+
+}
+
+.navigation li img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info .description {
+    height: 27vw;
+    bottom: -27vw;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    padding: 6.5vw 4.0625vw 4.0625vw 4.0625vw;
+}
+
+.info .description .text {
+    overflow: scroll;
+    height: 100%;
+}
+
+.info .description .text .title {
+    width: 50%;
+}
+
+.info .description .text .title {
+    color: #E14612;
+    font-size: 3.7vw;
+    padding-bottom: 1.54vw;
+}
+
+.info .description .text p {
+    color: #3F4D55;
+    justify-content: flex-end;
+}
+
+.info .img-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.info .img-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.info .img-map {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 27vw;
+    left: 2.7vw;
+}
+
+.info .btn-close {
+    position: absolute;
+    right: 0;
+    bottom: 18.9vw;
+    padding: 0.8125vw;
+    width: 7.3125vw;
+    height: 7.3125vw;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.none {
+    display: none;
+}
+
+.floor-title {
+    position: absolute;
+    bottom: 2.7vw;
+    right: 0;
+    text-align: right;
+    padding: 0 3.25vw;
+}
+
+.info .description .btn-pano{
+    float: right;
+    background-color: #E14612;
+    border-radius: 0.8125vw;
+    box-shadow: #0000003d 0px 0.325vw 1.4625vw;
+    position: absolute;
+    right: 16.2vw;
+    top: -4.05vw;
+    padding: 0.8125vw;
+    color: #fff;
+}
+
+.info .description .btn-pano2{
+    float: right;
+    background-color: #E14612;
+    border-radius: 0.8125vw;
+    box-shadow: #0000003d 0px 0.325vw 1.4625vw;
+    position: absolute;
+    right: 53.3vw;
+    top: -4.05vw;
+    padding: 0.8125vw;
+    color: #fff;
+}
+
+.info .description .btn-pano a,
+.info .description .btn-pano2 a
+{
+    line-height: 6.5vw;
+    color: #fff;
+    padding: 1.625vw;
+}
+
+.info .description .btn-pano img,
+.info .description .btn-pano2 img
+{
+    float: left;
+    width: 4.875vw;
+    height: 4.875vw;
+    display: inline-block;
+    line-height: initial;
+    margin: 0.975vw 0.65vw;
+}
+
+
+

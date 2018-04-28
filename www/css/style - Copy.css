@@ -1,0 +1,197 @@
+
+.map-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.pin {
+    position: absolute;
+    /*top: -10px;*/
+    left: 0;
+    z-index: 2;
+}
+
+.master-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navigation {
+    position: absolute;
+    left: 1em;
+    top: 4em;
+    opacity: 0;
+}
+.hideNavigation{left:-100%;}
+.navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    list-style: none;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.navigation li:hover {
+
+}
+
+.navigation li img {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info .description {
+    height: 10em;
+    bottom: -10em;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    padding: 40px 25px 25px 25px;
+}
+
+.info .description .text {
+    overflow: scroll;
+    height: 100%;
+}
+
+.info .description .text .title {
+    width: 50%;
+}
+
+.info .description .text .title {
+    color: #E14612;
+    font-size: 1.6em;
+    padding-bottom: 0.2em;
+}
+
+.info .description .text p {
+    color: #3F4D55;
+    justify-content: flex-end;
+}
+
+.info .img-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.info .img-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.info .img-map {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 10em;
+    left: 1em;
+}
+
+.info .btn-close {
+    position: absolute;
+    right: 0;
+    bottom: 7em;
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+.none {
+    display: none;
+}
+
+.floor-title {
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.info .description .btn-pano{
+    float: right;
+    background-color: #E14612;
+    border-radius: 5px;
+    box-shadow: #0000003d 0px 2px 9px;
+    position: absolute;
+    right: 6em;
+    top: -1.5em;
+    padding: 5px;
+    color: #fff;
+}
+
+.info .description .btn-pano2{
+    float: right;
+    background-color: #E14612;
+    border-radius: 5px;
+    box-shadow: #0000003d 0px 2px 9px;
+    position: absolute;
+    right: 19em;
+    top: -1.5em;
+    padding: 5px;
+    color: #fff;
+}
+
+.info .description .btn-pano a,
+.info .description .btn-pano2 a
+{
+    line-height: 40px;
+    color: #fff;
+    padding: 10px;
+}
+
+.info .description .btn-pano img,
+.info .description .btn-pano2 img
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: initial;
+    margin: 6px 4px;
+}
+
+
+

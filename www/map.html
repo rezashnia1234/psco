@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>بسم الله الرحمن الرحيم</title>
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,viewport-fit=cover" />
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<script src="cordova.js"></script>
+
+	
+    <!-- <link rel="stylesheet" href="./asset/css/reset.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/normalize-vr.css">
+    <link rel="stylesheet" type="text/css" href="css/main-vr.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		.vr .links {
+			width: 8.5vw;
+		}
+		.vr .links img {
+			width: 100% !important;
+			max-width: 50%;
+		}
+		@-ms-viewport { width: device-width; } 
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } } 
+		html { height:100%; } 
+	</style>
+
+</head>
+
+<body style="width:100%;overflow:hidden;">
+
+<div class="" onclick='window.location.replace("menu.html");' style="">
+    <img src="asset/images/home.png" class="back-icon"/>
+</div>
+
+
+<!--base map-->
+<div id="base-map">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/base-img.jpg" class="master-map">
+            <img name="mall-map" src="img/base.png" class="hidden pin transition" usemap="#image-map">
+        </div>
+    </div>
+
+    <div class="navigation" style="opacity: 1">
+        <ul>
+
+            <li onclick="change_scene(event,krpano,'video_scene');">
+                <img src="img/helicopter.png"/>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<!--landscape-->
+<div id="landscape" class="hidden" data-class="map-landscape">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/0G.jpg" class="master-map" name="mall-map"/>
+            <img src="img/floor/0G-txt.png" class="hidden pin" usemap="#map-landscape"/>
+        </div>
+    </div>
+</div>
+
+<!--ground-->
+<div id="ground" class="hidden" data-class="map-ground">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/00.jpg" class="master-map" name="mall-map"/>
+            <img src="img/floor/00-txt.png" class="hidden pin" usemap="#map-ground"/>
+        </div>
+    </div>
+</div>
+
+<!--basement-->
+<div id="basement" class="hidden" data-class="map-basement">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/-1-txt.png" class="hidden pin" usemap="#map-basement">
+            <img src="img/floor/-1.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--parking-->
+<div id="parking" class="hidden" data-class="map-parking">
+    <div class="map-container">
+        <img src="img/floor/-2-txt.png" class="hidden pin" usemap="#map-parking">
+        <img src="img/floor/-2.jpg" class="master-map">
+    </div>
+</div>
+
+<!--1st-->
+<div id="1st" class="hidden" data-class="map-1st">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/01-txt.png" class="hidden pin" usemap="#map-1st">
+            <img src="img/floor/01.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--2nd-->
+<div id="2nd" class="hidden" data-class="map-2nd">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/02-txt.png" class="hidden pin" usemap="#map-2nd">
+            <img src="img/floor/02.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--3rd-->
+<div id="3rd" class="hidden" data-class="map-3rd">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/03-txt.png" class="hidden pin" usemap="#map-3rd">
+            <img src="img/floor/03.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--4th-->
+<div id="4th" class="hidden" data-class="map-4th">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/04-txt.png" class="hidden pin" usemap="#map-4th">
+            <img src="img/floor/04.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--5th-->
+<div id="5th" class="hidden" data-class="map-5th">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/05-txt.png" class="hidden pin" usemap="#map-5th">
+            <img src="img/floor/05.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--hoe-tower-->
+<div id="hotel-tower" class="hidden" data-class="map-hotel-tower">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/07-txt.png" class="hidden pin" usemap="#map-hotel-tower">
+            <img src="img/floor/06.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<!--hoe-tower-->
+<div id="residential-tower" class="hidden" data-class="map-residential-tower">
+    <div class="map-container">
+        <div class="img-container">
+            <img src="img/floor/06-txt.png" class="hidden pin" usemap="#map-residential-tower">
+            <img src="img/floor/06.jpg" class="master-map">
+        </div>
+    </div>
+</div>
+
+<div class="navigation back-btn hideNavigation">
+    <ul>
+
+        <li>
+            <img src="img/back-ico.png" id="back-master"/>
+        </li>
+
+
+    </ul>
+</div>
+
+<div class="floor-title">
+
+</div>
+
+<div class="info">
+    <div class="img-back">
+        <img/>
+    </div>
+
+    <div class="img-map">
+        <img/>
+    </div>
+
+    <div class="description">
+        <div class="text">
+            <h3 class="title"></h3>
+            <p></p>
+        </div>
+
+        <div class="btn-pano">
+            <a href="">
+                Play Panaroma
+                <img src="img/play.png"/>
+            </a>
+
+        </div>
+
+        <div class="btn-pano2">
+            <a href="">
+                Play Panaroma 2
+                <img src="img/play.png"/>
+            </a>
+
+        </div>
+
+        <div class="btn"></div>
+    </div>
+
+    <div class="btn-close">
+        <img src="img/close.png" id="btn-close-info"/>
+    </div>
+</div>
+
+
+<map name="image-map">
+    <area class="target-point" alt="landscape" title="landscape" coords="27,439,243,509" shape="rect"
+          data-target="landscape">
+
+    <area class="target-point" alt="Basement" title="Underground" coords="27,517,252,590" shape="rect"
+          data-target="basement">
+
+    <area class="target-point" alt="Tower" title="Residential Tower" coords="37,255,312,339" shape="rect"
+          data-target="residential-tower">
+
+    <area class="target-point" alt="Tower" title="Hotel Tower" coords="1011,109,1231,209" shape="rect"
+          data-target="hotel-tower">
+
+    <area alt="Ground" title="Ground" coords="13,354,249,426" shape="rect"
+          class="target-point" data-target="ground">
+
+    <area class="target-point" alt="Parking" title="Parking" coords="12,605,236,677"
+          data-target="parking"
+          data-class="map-parking"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+    <area class="target-point" alt="1th Floor" title="1th Floor" coords="992,660,1209,584"
+          data-target="1st"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+    <area class="target-point" alt="2th Floor" title="2th Floor" coords="991,515,1203,578" 
+		  data-target="2nd"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+    <area class="target-point" alt="3th Floor" title="3th Floor" coords="990,510,1201,448" 
+		  data-target="3rd"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+    <area class="target-point" alt="4th Floor" title="4th Floor" coords="987,380,1203,442"
+          data-target="4th"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+		  
+    <area class="target-point" alt="5th Floor" title="5th Floor"  coords="987,304,1203,374"
+          data-target="5th"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-parking">
+    <!--parking-->
+    <area target="" alt="Parking Area" title="Parking Area" coords="539,201,232,338"
+          class="show-info map-parking "
+          data-class="map-parking"
+          data-title="Parking Area"
+          data-description="Floor: 3 <br/> Area: 167500 sqm <br/> Capacity: 4200 parking lots <br/>3 floors for parking, 4 input and output ramps are existing for entering and escaping that are located beside of all boulevards. These ramps with a round shapes ended to the last basement. By the use of Parking management system and jet fans, air will be conditioned.<br/>4 cores for main vertical movements in mall that is located front of each other."
+          data-image-back="-2-Parking-Area.jpg"
+          data-image-map="-2-Parking-Area.png"
+          data-link="change_scene(event,krpano,'scene_20_Parking_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Parking Area" title="Parking Area" coords="591,235,749,417"
+          class="show-info map-parking "
+          data-class="map-parking"
+          data-title="Parking Area"
+          data-description="Floor: 3 <br/> Area: 167500 sqm <br/> Capacity: 4200 parking lots <br/>3 floors for parking, 4 input and output ramps are existing for entering and escaping that are located beside of all boulevards. These ramps with a round shapes ended to the last basement. By the use of Parking management system and jet fans, air will be conditioned.<br/>4 cores for main vertical movements in mall that is located front of each other."
+          data-image-back="-2-Parking-Area.jpg"
+          data-image-map="-2-Parking-Area.png"
+          data-link="change_scene(event,krpano,'scene_20_Parking_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-basement">
+    <!--basement-->
+
+
+    <area target="" alt="Main Corridor" title="Main Corridor"  coords="601,229,728,375"
+          class="show-info map-basement "
+          data-class="map-basement"
+          data-title="Main Corridor"
+          data-description="Floor :1 <br/> Area: 67000 sqm <br/> Retails: 82 <br/>The main corridor is located in axe of plan that furnished by flower box."
+          data-image-back="-1-Main-Corridor.jpg"
+          data-image-map="-1-Main-Corridor.png"
+          data-link="change_scene(event,krpano,'scene_10_ARC_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Main Corridor" title="Main Corridor" coords="905,297,1181,420"
+          class="show-info map-basement "
+          data-class="map-basement"
+          data-title="Main Corridor"
+          data-description="Floor :1 <br/> Area: 67000 sqm <br/> Retails: 82 <br/>The main corridor is located in axe of plan that furnished by flower box."
+          data-image-back="-1-Main-Corridor.jpg"
+          data-image-map="-1-Main-Corridor.png"
+          data-link="change_scene(event,krpano,'scene_10_ARC_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+
+    <area target="" alt="Mechanical Point" title="Mechanical Point" coords="118,355,333,441"
+          class="show-info map-basement "
+          data-class="map-basement"
+          data-title="MEP Point"
+          data-description="ELV systems consist of BMS, PMS, Access control, FTTH infrastructure Global system for mobile communication, Bus duct for distribution."
+          data-image-back="-1-Mechanical-Point.jpg"
+          data-image-map="-1-Mechanical-Point.png"
+          data-link="change_scene(event,krpano,'scene_10_MEP_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Mechanical Point" title="Mechanical Point" coords="413,395,531,536"
+          class="show-info map-basement "
+          data-class="map-basement"
+          data-title="MEP Point"
+          data-description="ELV systems consist of BMS, PMS, Access control, FTTH infrastructure Global system for mobile communication, Bus duct for distribution."
+          data-image-back="-1-Mechanical-Point.jpg"
+          data-image-map="-1-Mechanical-Point.png"
+          data-link="change_scene(event,krpano,'scene_10_MEP_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-landscape">
+    <!--landscape-->
+    <area target="" alt="Landscape" title="Landscape" coords="1191,484,747,642"
+          class="show-info map-landscape"
+          data-class="map-landscape"
+          data-title="Landscape"
+          data-description="Area:30000 sqm  <br/>Areas around the mall and walk ways close to the mall are some notes to make mall like pleasant place.<br/>The combination of green yard and water feature have made fantastic place for people.<br/>Plaza and front yard coffee shops specially in the south-west of the mall with stablished totem and water features are making eye-catching area."
+          data-image-back="0G-Landscape-South-Side.jpg"
+          data-image-map="0G-Landscape-South-Side.png"
+          data-link="change_scene(event,krpano,'scene_00_landscape');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Landscape" title="Landscape" coords="546,436,333,606"
+          class="show-info map-landscape"
+          data-class="map-landscape"
+          data-title="Landscape"
+          data-description="Area:30000 sqm  <br/>Areas around the mall and walk ways close to the mall are some notes to make mall like pleasant place.<br/>The combination of green yard and water feature have made fantastic place for people.<br/>Plaza and front yard coffee shops specially in the south-west of the mall with stablished totem and water features are making eye-catching area."
+          data-image-back="0G-Landscape-South-Side.jpg"
+          data-image-map="0G-Landscape-South-Side.png"
+          data-link="change_scene(event,krpano,'scene_00_landscape');"
+          shape="rect">		  
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-ground">
+    <!--ground-->
+
+
+    <area target="" alt="Entrance lobby" title="Entrance lobby" coords="375,329,134,428"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Entrance lobby"
+          data-description="Floor: 3 <br/> Area: 1500 sqm <br/>The main entrance from SAJAD Blvd with the plaza are enough for people absorption. <br/>Intelligently design for using perfect materials with high range in colors and compatible lighting are making modern areas.<br/>In addition, the combination of transparent entrance and sky light with a spider connection system and a cable net system on a main structure are finally making modern, glorious and strange exterior design."
+          data-image-back="00-Entrance-lobby.jpg"
+          data-image-map="00-Entrance-lobby.png"
+          data-link="change_scene(event,krpano,'scene_00_Entrance_hall_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Entrance lobby" title="Entrance lobby" coords="495,365,567,385,599,448,593,511,516,543,461,503,453,443,452,414,475,394,489,390"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Entrance lobby"
+          data-description="Floor: 3 <br/> Area: 1500 sqm <br/>The main entrance from SAJAD Blvd with the plaza are enough for people absorption. <br/>Intelligently design for using perfect materials with high range in colors and compatible lighting are making modern areas.<br/>In addition, the combination of transparent entrance and sky light with a spider connection system and a cable net system on a main structure are finally making modern, glorious and strange exterior design."
+          data-image-back="00-Entrance-lobby.jpg"
+          data-image-map="00-Entrance-lobby.png"
+          data-link="change_scene(event,krpano,'scene_00_Entrance_hall_copy');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Event hall" title="Event hall" coords="128,228,345,314"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Event hall"
+          data-description="Floor: 4 <br/> Area: 3500 sqm <br/>The heart of the mall, the place for holding ceremonies and special local Iranian days that makes everything attractive for everyone. <br/>The longest void of the mall with a 40 meters span and 120 meters long covered by glass that uses the ADDON system.<br/>The structure of this mall designed with a form of CHALIK and box-shape."
+          data-image-back="00-Event-hall.jpg"
+          data-image-map="00-Event-hall.png"
+          data-link="change_scene(event,krpano,'scene_00_event_hall_1');"
+          data-link2="change_scene(event,krpano,'scene_00_event_hall_2');"  		  
+		  data-link-title="Panorama - North"
+		  data-link-title2="Panorama - South"
+          shape="rect">
+    <area target="" alt="Event hall" title="Event hall" coords="648,244,721,259,754,294,747,356,716,390,636,378,591,340,585,298,602,255"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Event hall"
+          data-description="Floor: 4 <br/> Area: 3500 sqm <br/>The heart of the mall, the place for holding ceremonies and special local Iranian days that makes everything attractive for everyone. <br/>The longest void of the mall with a 40 meters span and 120 meters long covered by glass that uses the ADDON system.<br/>The structure of this mall designed with a form of CHALIK and box-shape."
+          data-image-back="00-Event-hall.jpg"
+          data-image-map="00-Event-hall.png"
+          data-link="change_scene(event,krpano,'scene_00_event_hall_1');"
+          data-link2="change_scene(event,krpano,'scene_00_event_hall_2');"  
+		  data-link-title="Panorama - North"
+		  data-link-title2="Panorama - South"
+          shape="poly">
+
+
+
+    <area target="" alt="Fashion node" title="Fashion node" coords="344,130,125,215"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Fashion node"
+          data-description="Floor: 4 <br/> Area: 275 sqm <br/>The concept design is based on perpendicular form that consist of 3 corridors in length and 3 corridors in width. The crossed points are considered for special events and named by the shopping zones."
+          data-image-back="00-Fashion-node.jpg"
+          data-image-map="00-Fashion-node.png"
+          data-link="change_scene(event,krpano,'scene_00_Fashion_Node');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Fashion node" title="Fashion node" coords="697,138,732,177,745,216,721,248,680,246,647,234,630,197,650,157"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Fashion node"
+          data-description="Floor: 4 <br/> Area: 275 sqm <br/>The concept design is based on perpendicular form that consist of 3 corridors in length and 3 corridors in width. The crossed points are considered for special events and named by the shopping zones."
+          data-image-back="00-Fashion-node.jpg"
+          data-image-map="00-Fashion-node.png"
+          data-link="change_scene(event,krpano,'scene_00_Fashion_Node');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Banquet hall" title="Banquet hall" coords="345,115,129,26"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Banquet hall"
+          data-description="Floor: 2 <br/> Area: 2500 sqm <br/> Capacity :1000  <br/>Banquet hall has 4 separated saloons with special entrance in north of project. these saloons can attach together and convert to one saloon for great celebration. Each one of saloons have separated service core."
+          data-image-back="00-Banquet-hall.jpg"
+          data-image-map="00-Banquet-hall.png"
+          data-link="change_scene(event,krpano,'scene_00_benquit_hall');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Banquet hall" title="Banquet hall" coords="766,80,807,79,835,97,837,132,833,171,803,188,764,186,738,171,708,127,727,98"
+          class="show-info map-ground "
+          data-class="map-ground"
+          data-title="Banquet hall"
+          data-description="Floor: 2 <br/> Area: 2500 sqm <br/> Capacity :1000  <br/>Banquet hall has 4 separated saloons with special entrance in north of project. these saloons can attach together and convert to one saloon for great celebration. Each one of saloons have separated service core."
+          data-image-back="00-Banquet-hall.jpg"
+          data-image-map="00-Banquet-hall.png"
+          data-link="change_scene(event,krpano,'scene_00_benquit_hall');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-1st">
+    <!--1st-->
+
+
+    <area target="" alt="Mechanical Point" title="Mechanical Point" coords="213,246,412,349"
+          class="show-info map-1st "
+          data-class="map-1st"
+          data-title="MEP Point"
+          data-description="Mechanical systems consist of : air conditioning (4pipe) <br/> Gray water just for flushing <br/> Smoke management system <br/> Car park ventilation by jet fans <br/> High efficiency and eco-friendly equipment"
+          data-image-back="01-Mechanical-Point.jpg"
+          data-image-map="01-Mechanical-Point.png"
+          data-link="change_scene(event,krpano,'scene_01_MEP');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Mechanical Point" title="Mechanical Point" coords="489,299,603,440"
+          class="show-info map-1st "
+          data-class="map-1st"
+          data-title="MEP Point"
+          data-description="Mechanical systems consist of : air conditioning (4pipe) <br/> Gray water just for flushing <br/> Smoke management system <br/> Car park ventilation by jet fans <br/> High efficiency and eco-friendly equipment"
+          data-image-back="01-Mechanical-Point.jpg"
+          data-image-map="01-Mechanical-Point.png"
+          data-link="change_scene(event,krpano,'scene_01_MEP');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+
+    <area target="" alt="Mosque" title="Mosque" coords="970,270,1179,418"
+          class="show-info map-1st "
+          data-class="map-1st"
+          data-title="Mosque"
+          data-description="Floor: 3 <br/> Area: 3000 sqm <br/> Capacity: 300 <br/>Mosque is designed with a modern Islamic architecture in the border of Khayyam street with the capacity of 600 prayers."
+          data-image-back="01-Mosque.jpg"
+          data-image-map="01-Mosque.png"
+          data-link="change_scene(event,krpano,'scene_01_Mosque_Level_copy');"
+          data-link2="change_scene(event,krpano,'scene_00_Mosque_Level_copy');"
+		  data-link-title="Panorama - wemon"
+		  data-link-title2="Panorama - men"
+          shape="rect">
+    <area target="" alt="Mosque" title="Mosque" coords="922,367,771,201"
+          class="show-info map-1st "
+          data-class="map-1st"
+          data-title="Mosque"
+          data-description="Floor: 3 <br/> Area: 3000 sqm <br/> Capacity: 300 <br/>Mosque is designed with a modern Islamic architecture in the border of Khayyam street with the capacity of 600 prayers."
+          data-image-back="01-Mosque.jpg"
+          data-image-map="01-Mosque.png"
+          data-link="change_scene(event,krpano,'scene_01_Mosque_Level_copy');"
+          data-link2="change_scene(event,krpano,'scene_00_Mosque_Level_copy');"  		  		  
+		  data-link-title="Panorama - wemon"
+		  data-link-title2="Panorama - men"
+          shape="rect">
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-2nd">
+    <!--2nd-->
+
+
+    <area target="" alt="SPA" title="SPA" coords="632,122,460,7"
+          class="show-info map-2nd "
+          data-class="map-2nd"
+          data-title="SPA"
+          data-description="Floor: 1 <br/> Area: 1200 sqm <br/> Capacity: 100 <br/>Including: massage, Jacuzzi, Steam Sauna, Hydrotropic, Beauty Saloon<br/> Spa and Persian bath are located in the entertainment zone beside of the sport complex of the mall that is suitable for woman and men, also designed Because of the people’s convenience."
+          data-image-back="02-SPA.jpg"
+          data-image-map="02-SPA.png"
+          data-link=""
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="SPA" title="SPA" coords="782,76,759,164,717,188,688,132,682,78,694,63,750,50"
+          class="show-info map-2nd "
+          data-class="map-2nd"
+          data-title="SPA"
+          data-description="Floor: 1 <br/> Area: 1200 sqm <br/> Capacity: 100 <br/>Including: massage, Jacuzzi, Steam Sauna, Hydrotropic, Beauty Saloon<br/> Spa and Persian bath are located in the entertainment zone beside of the sport complex of the mall that is suitable for woman and men, also designed Because of the people’s convenience."
+          data-image-back="02-SPA.jpg"
+          data-image-map="02-SPA.png"
+		  data-link=""
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Persian Bath" title="Persian Bath" coords="938,27,1173,147"
+          class="show-info map-2nd "
+          data-class="map-2nd"
+          data-title="Persian Bath"
+          data-description="Floor: 1 <br/> Area: 350 sqm <br/> Capacity: 20 <br/>Persian Baths have a complex structure with several rooms, including hot and cold baths, toilets, shaving areas, and a restaurant<br/>The Persian bath designed based on Iranian culture and constructed with ancient architectures."
+          data-image-back="02-Persian-Bath.jpg"
+          data-image-map="02-Persian-Bath.png"
+          data-link=""
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Persian Bath" title="Persian Bath" coords="758,180,784,80,855,97,875,146,820,206,777,193"
+          class="show-info map-2nd "
+          data-class="map-2nd"
+          data-title="Persian Bath"
+          data-description="Floor: 1 <br/> Area: 350 sqm <br/> Capacity: 20 <br/>Persian Baths have a complex structure with several rooms, including hot and cold baths, toilets, shaving areas, and a restaurant<br/>The Persian bath designed based on Iranian culture and constructed with ancient architectures."
+          data-image-back="02-Persian-Bath.jpg"
+          data-image-map="02-Persian-Bath.png"
+          data-link=""
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-3rd">
+    <!--3rd-->
+
+
+    <area target="" alt="GYM" title="GYM" coords="668,32,420,153"
+          class="show-info map-3rd "
+          data-class="map-3rd"
+          data-title="GYM"
+          data-description="Floor: 1 <br/> Area: 1500 sqm <br/> Capacity: 100 <br/>Techno gym is located in sport s zone with separated saloon for male and female.<br/>This part has internal stair with spa zone.it has several saloon for TRX, SPINING, AEROBIC, PILATES, …"
+          data-image-back="03-GYM.jpg"
+          data-image-map="03-GYM.png"
+          data-link="change_scene(event,krpano,'scene_03_GYM');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="GYM" title="GYM" coords="696,47,840,194"
+          class="show-info map-3rd "
+          data-class="map-3rd"
+          data-title="GYM"
+          data-description="Floor: 1 <br/> Area: 1500 sqm <br/> Capacity: 100 <br/>Techno gym is located in sport s zone with separated saloon for male and female.<br/>This part has internal stair with spa zone.it has several saloon for TRX, SPINING, AEROBIC, PILATES, …"
+          data-image-back="03-GYM.jpg"
+          data-image-map="03-GYM.png"
+          data-link="change_scene(event,krpano,'scene_03_GYM');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-4th">
+    <!--4th-->
+    <area target="" alt="Cinema" title="Cinema" coords="150,130,405,245"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Cinema"
+          data-description="Floor: 1 <br/> Area: 2000 sqm <br/>This part has 6 saloons for cinemas are located in entertainment zone, 2 of these saloons are VIP that have a special elevators and servicing areas."
+          data-image-back="04-Cinema.jpg"
+          data-image-map="04-Cinema.png"
+          data-link="change_scene(event,krpano,'scene_04_cinema');"
+          data-link2="change_scene(event,krpano,'scene_04_Cinema_vip');"  		  		  
+		  data-link-title="Panaroma - Public"
+		  data-link-title2="Panaroma - VIP"
+          shape="rect">
+    <area target="" alt="Cinema" title="Cinema" coords="716,104,575,227"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Cinema"
+          data-description="Floor: 1 <br/> Area: 2000 sqm <br/>This part has 6 saloons for cinemas are located in entertainment zone, 2 of these saloons are VIP that have a special elevators and servicing areas."
+          data-image-back="04-Cinema.jpg"
+          data-image-map="04-Cinema.png"
+          data-link="change_scene(event,krpano,'scene_04_cinema');"
+          data-link2="change_scene(event,krpano,'scene_04_Cinema_vip');"		  
+		  data-link-title="Panaroma - Public"
+		  data-link-title2="Panaroma - VIP"
+          shape="rect">
+
+
+
+    <area target="" alt="bowling" title="bowling" coords="1130,7,932,92"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="bowling"
+          data-description="Floor: 1 <br/> Area: 750sqm <br/>This part Located in FEC section that has 8 lanes with special coffee shop for celebrations. In addition it has nessecery properties for professional matches."
+          data-image-back="04-bowling.jpg"
+          data-image-map="04-bowling.png"
+          data-link="change_scene(event,krpano,'scene_04_bowling');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="bowling" title="bowling" coords="712,59,755,18,817,35,849,102,751,168,734,123"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="bowling"
+          data-description="Floor: 1 <br/> Area: 750sqm <br/>This part Located in FEC section that has 8 lanes with special coffee shop for celebrations. In addition it has nessecery properties for professional matches."
+          data-image-back="04-bowling.jpg"
+          data-image-map="04-bowling.png"
+          data-link="change_scene(event,krpano,'scene_04_bowling');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Food court" title="Food court" coords="924,97,1136,193"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Food court"
+          data-description="Floor: 1 <br/> Area: 4500 sqm <br/> Capacity :400 <br/>Food court with 13 special areas with Iranian and international foods at the northern part of the building beside of cinemas have completed the entertainment section of the mall.<br/>VIP and public seats designed with a combination of various and attractive material with green yards.<br/>Food court sky light has designed based on circular form.<br/>The structure of the sky light designed with pipe sections and truss structure. The main frame structure with 2D truss and pipe sections. The sub structure with I-shape sections is extend to end."
+          data-image-back="04-Food-court.jpg"
+          data-image-map="04-Food-court.png"
+          data-link="change_scene(event,krpano,'scene_04_food_court_1');"
+          data-link2="change_scene(event,krpano,'scene_04_food_court_2');"		  		  
+		  data-link-title="Panaroma - Public"
+		  data-link-title2="Panaroma - VIP"
+          shape="rect">
+    <area target="" alt="Food court" title="Food court" coords="841,118,741,180,769,255,860,252,879,183"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Food court"
+          data-description="Floor: 1 <br/> Area: 4500 sqm <br/> Capacity :400 <br/>Food court with 13 special areas with Iranian and international foods at the northern part of the building beside of cinemas have completed the entertainment section of the mall.<br/>VIP and public seats designed with a combination of various and attractive material with green yards.<br/>Food court sky light has designed based on circular form.<br/>The structure of the sky light designed with pipe sections and truss structure. The main frame structure with 2D truss and pipe sections. The sub structure with I-shape sections is extend to end."
+          data-image-back="04-Food-court.jpg"
+          data-image-map="04-Food-court.png"
+          data-link="change_scene(event,krpano,'scene_04_food_court_1');"
+          data-link2="change_scene(event,krpano,'scene_04_food_court_2');"		  		 
+		  data-link-title="Panaroma - Public"
+		  data-link-title2="Panaroma - VIP"
+          shape="poly">
+
+
+
+    <area target="" alt="Tropical garden" title="Tropical garden" coords="160,251,429,348"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Tropical garden"
+          data-description="Floor: 2 <br/> Area: 2000 sqm <br/>This garden is The first tropical garden in Iran that located in 4 level. All of vegetarian are tropical plants. mep system is so complicated to supply suitable air for these type of plats. <br/>Skylight is special form with Single coated."
+          data-image-back="04-Tropical-garden.jpg"
+          data-image-map="04-Tropical-garden.png"
+          data-link="change_scene(event,krpano,'scene_04_Tropical_Garden_2');"
+          data-link2="change_scene(event,krpano,'scene_04_Tropical_Garden_1');"		  		 		  
+		  data-link-title="Panaroma - West"
+		  data-link-title2="Panaroma - East"
+          shape="rect">
+    <area target="" alt="Tropical garden" title="Tropical garden" coords="497,290,617,430"
+          class="show-info map-4th "
+          data-class="map-4th"
+          data-title="Tropical garden"
+          data-description="Floor: 2 <br/> Area: 2000 sqm <br/>This garden is The first tropical garden in Iran that located in 4 level. All of vegetarian are tropical plants. mep system is so complicated to supply suitable air for these type of plats. <br/>Skylight is special form with Single coated."
+          data-image-back="04-Tropical-garden.jpg"
+          data-image-map="04-Tropical-garden.png"
+          data-link="change_scene(event,krpano,'scene_04_Tropical_Garden_2');"
+          data-link2="change_scene(event,krpano,'scene_04_Tropical_Garden_1');"		  		 		  
+		  data-link-title="Panaroma - West"
+		  data-link-title2="Panaroma - East"
+          shape="rect">
+
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-5th">
+    <!--5th-->
+    <area target="" alt="Health Road" title="Health Road" coords="471,181,201,279"
+          class="show-info map-5th "
+          data-class="map-5th"
+          data-title="Health Road"
+          data-description="Around of event hall on top of roof is located health road that Surrounding with green wall that neighborhood can usage for exercise and public sports with some coffee shop to serve breakfast or etc.<br/>In addition, it has some outdoor sport equipment for visitors."
+          data-image-back="05-Health-Road.jpg"
+          data-image-map="05-Health-Road.png"
+          data-link="change_scene(event,krpano,'scene_05_Health_Road');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Health Road" title="Health Road" coords="529,214,488,319,578,374,618,337,608,262"
+          class="show-info map-5th "
+          data-class="map-5th"
+          data-title="Health Road"
+          data-description="Around of event hall on top of roof is located health road that Surrounding with green wall that neighborhood can usage for exercise and public sports with some coffee shop to serve breakfast or etc.<br/>In addition, it has some outdoor sport equipment for visitors."
+          data-image-back="05-Health-Road.jpg"
+          data-image-map="05-Health-Road.png"
+          data-link="change_scene(event,krpano,'scene_05_Health_Road');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Tennis court" title="Tennis court" coords="448,69,209,166"
+          class="show-info map-5th "
+          data-class="map-5th"
+          data-title="Tennis court"
+          data-description="This area has 2 separated tennis court & tennis paddle for professional matches<br/>In addition tennis court equipped for Audience for matches. For comfortable access arrane special lift for visitors.<br/>Also it has lockers, shop, restroom and Smoothie bar for players and others."
+          data-image-back="05-Tennis-court.jpg"
+          data-image-map="05-Tennis-court.png"
+          data-link="change_scene(event,krpano,'scene_05_Tennis');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Tennis court" title="Tennis court" coords="549,106,537,198,628,264,696,186,644,110"
+          class="show-info map-5th "
+          data-class="map-5th"
+          data-title="Tennis court"
+          data-description="This area has 2 separated tennis court & tennis paddle for professional matches<br/>In addition tennis court equipped for Audience for matches. For comfortable access arrane special lift for visitors.<br/>Also it has lockers, shop, restroom and Smoothie bar for players and others."
+          data-image-back="05-Tennis-court.jpg"
+          data-image-map="05-Tennis-court.png"
+          data-link="change_scene(event,krpano,'scene_05_Tennis');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-residential-tower">
+    <!--hote-tower-->
+    <area target="" alt="Penthouse unit" title="Penthouse unit" coords="362,86,97,184"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="Penthouse unit"
+          data-description="Area :2000 sqm <br/>Penthouse is Consist of Hall and living room that separated in 2 levels, 4 master bedrooms, Outdoor pool and Jacuzzi, Maid room, Terrace garden, Workroom and Pantry. <br/>Scenery of city"
+          data-image-back="06-Penthouse-unit.jpg"
+          data-image-map="06-Penthouse-unit.png"
+          data-link="change_scene(event,krpano,'scene_RT_Penthouse_1');"
+          data-link2="change_scene(event,krpano,'scene_RT_Penthouse_2');"		  		 		  		  
+		  data-link-title="Panaroma - Secend"
+		  data-link-title2="Panaroma - First"
+          shape="rect">
+    <area target="" alt="Penthouse unit" title="Penthouse unit" coords="386,174,392,99,455,88,492,103,511,184,445,222"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="Penthouse unit"
+          data-description="Area :2000 sqm <br/>Penthouse is Consist of Hall and living room that separated in 2 levels, 4 master bedrooms, Outdoor pool and Jacuzzi, Maid room, Terrace garden, Workroom and Pantry. <br/>Scenery of city"
+          data-image-back="06-Penthouse-unit.jpg"
+          data-image-map="06-Penthouse-unit.png"
+          data-link="change_scene(event,krpano,'scene_RT_Penthouse_1');"
+          data-link2="change_scene(event,krpano,'scene_RT_Penthouse_2');"		  		 		  		  
+		  data-link-title="Panaroma - Secend"
+		  data-link-title2="Panaroma - First"
+          shape="poly">
+
+		  
+
+
+    <area target="" alt="pool" title="pool" coords="87,313,284,413"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="pool"
+          data-description="Its located In 11&12 level of residential tower that hav Separated parts for ladies and gentleman. The pools Consist of coffee shop, gym, swimming pool, steam tunnel and sauna.<br/>In addition one of the side of pools is glass to swimmer have scenery of city."
+          data-image-back="06-pool.jpg"
+          data-image-map="06-pool.png"
+          data-link="change_scene(event,krpano,'scene_RT_Pool');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="pool" title="pool" coords="475,225,533,229,582,271,569,355,465,352,419,295"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="pool"
+          data-description="Its located In 11&12 level of residential tower that hav Separated parts for ladies and gentleman. The pools Consist of coffee shop, gym, swimming pool, steam tunnel and sauna.<br/>In addition one of the side of pools is glass to swimmer have scenery of city."
+          data-image-back="06-pool.jpg"
+          data-image-map="06-pool.png"
+          data-link="change_scene(event,krpano,'scene_RT_Pool');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+
+
+    <area target="" alt="Duplex unit" title="Duplex unit" coords="512,147,532,217,612,199,664,123,615,80,533,80,515,125,512,138"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="Duplex unit"
+          data-description="Area :2000 sqm<br/>Duplex apartments Consist of Hall and living room separated in 2 levels, 4 master bedrooms, Maid room, Terrace garden, Workroom, Pantry for mezzanine."
+          data-image-back="06-duplex.jpg"
+          data-image-map="06-duplex.png"
+          data-link="change_scene(event,krpano,'scene_RT_Dublex');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="poly">
+    <area target="" alt="Duplex unit" title="Duplex unit" coords="93,193,336,298"
+          class="show-info map-residential-tower "
+          data-class="map-residential-tower"
+          data-title="Duplex unit"
+          data-description="Area :2000 sqm<br/>Duplex apartments Consist of Hall and living room separated in 2 levels, 4 master bedrooms, Maid room, Terrace garden, Workroom, Pantry for mezzanine."
+          data-image-back="06-duplex.jpg"
+          data-image-map="06-duplex.png"
+          data-link="change_scene(event,krpano,'scene_RT_Dublex');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+
+</map>
+
+
+
+
+<!--******************************************************-->
+
+
+
+
+<map name="map-hotel-tower">
+    <!--hote-tower-->
+    <area target="" alt="Lobby" title="Lobby" coords="1215,189,998,315"
+          class="show-info map-hotel-tower "
+          data-class="map-hotel-tower"
+          data-title="Hotel Tower"
+          data-description="Floor: 29 <br/> Area: 66000 sqm <br/> Room: 354 <br/>Hotel tower is located in north of project in front of Homa hotel .the building for special access to hotel be Retreat .this hotel is one the important international brand of hotel in the world. Lobby designed by classic type that has a mezzanine. <br/>There are 2 lift lobby for access to higher levels. Also it has special parking for guests."
+          data-image-back="06-lobby.jpg"
+          data-image-map="06-lobby.png"
+          data-link="change_scene(event,krpano,'scene_Hl_Lobby');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+    <area target="" alt="Lobby" title="Lobby" coords="953,125,805,288"
+          class="show-info map-hotel-tower "
+          data-class="map-hotel-tower"
+          data-title="Hotel Tower"
+          data-description="Floor: 29 <br/> Area: 66000 sqm <br/> Room: 354 <br/>Hotel tower is located in north of project in front of Homa hotel .the building for special access to hotel be Retreat .this hotel is one the important international brand of hotel in the world. Lobby designed by classic type that has a mezzanine. <br/>There are 2 lift lobby for access to higher levels. Also it has special parking for guests."
+          data-image-back="06-lobby.jpg"
+          data-image-map="06-lobby.png"
+          data-link="change_scene(event,krpano,'scene_Hl_Lobby');"
+		  data-link-title=""
+		  data-link-title2=""
+          shape="rect">
+
+</map>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/imageMapResizer.js"></script>
+<script src="js/app.js"></script>
+<script>
+    $('map').imageMapResize();
+</script>
+
+
+<style>
+    #pano {
+        transition: all 1s ease-in-out;
+    }
+
+    #pano.show_pano {
+        left: 0 !important;
+        opacity: 1 !important;
+        z-index: 2 !important;
+    }
+
+    #pano-menu .vr .links {
+        transition: all 1s ease-in-out;
+    }
+
+    #pano-menu .vr .links {
+        left: -100% !important;
+        opacity: 0 !important;
+    }
+
+    #pano-menu.show_pano .vr .links {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+</style>
+
+
+<div id="pano-menu" class="page" style="position:  relative;z-index: 9;">
+    <div class="vr">
+
+        <div class="links">
+            <ul class="btn-zoom" style="top:0;">
+                <li>
+                    <a onclick='window.location.replace("menu.html");'>
+                        <img src="asset/images/home.png" class="back-icon2"/>
+                    </a>
+                </li>
+				
+                <li>
+                    <a onclick='$("#pano").removeClass("show_pano");$("#pano-menu").removeClass("show_pano");krpano.call("plugin[video].stop()");'>
+                        <img src="img/back-ico.png"/>
+                    </a>
+                </li>
+                <!--
+                <li>
+                    <a>
+                        <img src="asset/images/zoom_in.png"/>
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                        <img src="asset/images/zoom_out.png"/>
+                    </a>
+                </li>
+                -->
+                <li id="gyroscope">
+                    <a>
+                        <img src="asset/images/gyroscope_off.png"/>
+                    </a>
+                </li>
+
+                <li id="glassVR">
+                    <a href="#">
+                        <img src="asset/images/vr_off.png"/>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="btn-vr">
+
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="tour.js?0"></script>
+<div id="pano" style="width:100%;height:100%;position:absolute;left2:0;left:-100%;opacity:0;top:0;z-index:-1;">
+    <noscript>
+        <table style="width:100%;height:100%;">
+            <tr style="valign:middle;">
+                <td>
+                    <div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div>
+                </td>
+            </tr>
+        </table>
+    </noscript>
+    <script>
+        var gyroscope = false;
+        var glassVR = false;
+        var krpano;
+		
+        setTimeout(function () {
+			embedpano({swf: "tour.swf", xml: "tour.xml?0", target: "pano", html5: "only", passQueryParameters: true});
+        }, 1000);
+        setTimeout(function () {
+            krpano = document.getElementById('krpanoSWFObject');
+            //krpano.call("skin_hideskin");
+			krpano.call("set(plugin[skin_gyro].enabled,false);");
+			
+			document.addEventListener("backbutton", onBackKeyDown, false);
+			function onBackKeyDown(e) {
+				e.preventDefault();
+				
+				if(glassVR)
+					krpano.call("webvr.exitVR();");
+				else if($("#pano").hasClass("show_pano"))
+				{
+					$("#pano").removeClass("show_pano");
+					$("#pano-menu").removeClass("show_pano");
+					krpano.call("plugin[video].stop()");
+				}
+				else if($(".info").css("opacity")==1)
+					$('#btn-close-info').trigger('click');
+				else if($(".navigation.back-btn").css("opacity")==1)
+					$('#back-master').trigger('click');
+				else
+					window.location.replace("menu.html");
+					
+				return true;
+			}
+        }, 2500);
+
+        function change_scene(e, krpano, scene_name) {
+            console.log(scene_name);
+            e.preventDefault();
+            krpano.call("loadscene(" + scene_name + ", null, MERGE, OPENBLEND(0.5, 0.0, 0.75, 0.05, linear));");
+			setTimeout(function(){
+				$("#pano").addClass("show_pano");
+				$("#pano-menu").addClass("show_pano");
+			}, 300);
+            //$("#pano").removeClass("show_pano");
+            //$("#pano-menu").removeClass("show_pano");
+        }
+        function show_menu_after_vr() {
+			// $('#pano-menu').addClass('show_pano');
+			glassVR = false;
+			$('#glassVR').find('img').attr('src', 'asset/images/vr_off.png');
+        }
+        function hide_menu_for_vr() {
+			// $('#pano-menu').removeClass('show_pano');
+			glassVR = true;
+			$('#glassVR').find('img').attr('src', 'asset/images/vr.png');
+        }
+
+        //example : change_scene(krpano,"scene_02");
+        $('#gyroscope').on('click', function () {
+            if (gyroscope) {
+                krpano.call("set(plugin[skin_gyro].enabled,false);");
+                gyroscope = false;
+                $(this).find('img').attr('src', 'asset/images/gyroscope_off.png');
+            } else {
+                //krpano.call("switch(plugin[skin_gyro].enabled); if(plugin[skin_gyro].disable, skin_showmap(true));");
+                krpano.call("set(plugin[skin_gyro].enabled,true);");
+                gyroscope = true;
+                $(this).find('img').attr('src', 'asset/images/gyroscope.png');
+            }
+        });
+        $('#glassVR').on('click', function () {
+            krpano.call("webvr.toggleVR();");
+			/*
+			if (glassVR) {
+                krpano.call("webvr.exitVR();");
+                $('#glassVR').find('img').attr('src', 'asset/images/vr.png');
+                glassVR = false;
+            } else {
+				krpano.call("webvr.enterVR();");
+				glassVR = true;
+                $(this).find('img').attr('src', 'asset/images/vr_off.png');
+            }
+			*/
+			
+			//glassVR = true;
+            /*
+			krpano.call("webvr.enterVR();");/////////////////////////
+			if (glassVR) {
+                krpano.call("webvr.exitVR();");
+                $(this).find('img').attr('src', 'asset/images/vr.png');
+            } else {
+                glassVR = false;
+                $(this).find('img').attr('src', 'asset/images/vr_off.png');
+            }
+			*/
+        });
+    </script>
+</div>
+
+</body>
+</html>

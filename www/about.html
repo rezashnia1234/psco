@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta http-equiv="cleartype" content="on">
+    <script src="cordova.js"></script>
+
+    <link rel="stylesheet" href="./asset/css/framework7.min.css">
+    <link rel="stylesheet" href="./asset/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+</head>
+<script>
+	function init() {		
+		console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+		document.addEventListener("deviceready", onDeviceReady, false);
+		//onDeviceReady();
+	}
+	function onDeviceReady() {
+		document.addEventListener("backbutton", onBackKeyDown, false);
+		function onBackKeyDown(e) {
+			e.preventDefault();
+			window.location.replace("menu.html");
+			return true;
+		}
+	}
+</script>
+
+<body onload="init();">
+
+<div class="page">
+    <div class="background" style="pointer-events : none;">
+        <img src="asset/images/logo_gray.png"/>
+    </div>
+
+    <div class="about">
+
+
+
+        <div class="description">
+			<div class="logo">
+				<img src="asset/images/logo.png"/>
+			</div>
+
+            <h3 class="">
+                PROJECT – MASH’HAD COMMERCIAL DEVELOPMENT
+            </h3>
+
+            <h3 class="">
+                Description:
+            </h3>
+
+            <p>
+                36.316656, 59.560269 – Mashhad, Iran
+            </p>
+
+            <p>
+                Mashhad mall is a multi-use mega project located in the heart of city of Mashhad CBD. Bing the pilgrim capital of Iran, City of Mashhad with a population over 3 million is the flourishing center of North East region of the country, 900 km away from the Capital city of Tehran.
+            </p>
+
+            <p>
+                With the holy shrine of Imam Reza placed in the city, Mashhad is the most visited City in Iran. the number of tourists which has reached to 28 million last years and is forecasted to grow to 35 million in 10 years annually, define Mashhad as one of the be busiest tourist destination in the world.
+            </p>
+            
+			<p>
+                The project consists of a 4B +UG + G + 5 commercial developments and 2 Residential & Hotel Tower in Mashhad.
+            </p>
+			<p>
+                project is understood to be as follows:<br/>-230,000sqm Shopping Mall<br/>-210,000 sqm Basement Parking
+            </p>
+			<p>
+                The project includes 3 levels of basement with 5 above grade Mall levels. Typically, each element of the project is designed with independent servicing.
+            </p>
+			<p>
+                Mashhad Mall is Constructed in 4 different sections.<br/>1-	Huge underground class “A” parking with 4200 car park.<br/>2- Mega Shopping Mall including a hyper Market.<br/>3- Five-star Hotel tower.<br/>4-	High-end Residential tower.
+            </p>
+			<p>
+                With a built up area of 620,000 sqm located in the best part of city, this project architecturally and from the economic point of view, will stand out as the most important entity within the urban fabric of city of Mashhad<br/>Architecture Design<br/>Continuous visualization by great void in heart of complex <br/>9 sky light for using daylight<br/>For vertical moving 13 lift lobby with 60 lifts and 120 Escalators & moving walk Sport places consist of bowling, tennis court, health road, gym, spa.<br/>Entertainment places consist of family entertainment, KIDZANIA, cinema.<br/>Restaurant and Roof Gardens international and Iranian foods in different levels with F&B units consist of coffee shops, food court, Foodland and kiosks.<br/>4 Banquet halls with special entrance and lobby located in the ground.<br/>7 meeting rooms in mezzanine floor for reservation organization.
+            </p>
+			<hr/>
+			<p onclick="window.open('https://www.smgroup.ir', '_system', 'location=yes');" style="text-align:center;">
+				<img src="img/logo2.png" style="width:  100%;max-width: 150px;" />
+				<!-- Designed and developed by SMGroup.ir -->
+			</p>
+        </div>
+
+        <div class="" onclick='window.location.replace("menu.html");'>
+            <img src="asset/images/home.png" class="back-icon"/>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="./asset/js/jquery.js"></script>
+<script src="./asset/js/framework7.min.js"></script>
+<script src="./asset/js/main.js"></script>
+<script src="./js/navi.js"></script>
+
+</body>
+</html>

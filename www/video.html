@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="./asset/css/framework7.min.css">
+    <link rel="stylesheet" href="./asset/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+	
+	<script src="cordova.js"></script>
+	<script>
+		function init() {		
+			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+			document.addEventListener("deviceready", onDeviceReady, false);
+			//onDeviceReady();
+		}
+		function onDeviceReady() {
+			document.addEventListener("backbutton", onBackKeyDown, false);
+			function onBackKeyDown(e) {
+				e.preventDefault();
+				window.location.replace("menu.html");
+				return true;
+			}
+		}
+	</script>
+
+</head>
+<body onload="init();">
+
+<div class="page">
+    <div class="splash-second">
+		<!--controls-->
+        <video autoplay id="logo" >
+            <source src="asset/video/intro.mp4" type="video/mp4">
+        </video>
+
+        <img src="img/home.png" id="skip"
+             style="z-index: 100000;     z-index: 100000; background-color: rgba(255,255,255,0); padding: 8px;"
+             class="back-icon"/>
+    </div>
+</div>
+
+<script src="./asset/js/jquery.js"></script>
+<script src="./asset/js/framework7.min.js"></script>
+<script src="./asset/js/main.js"></script>
+<script>
+    $('#skip').on('click', function () {
+        window.location.replace("menu.html");
+    });
+    $(document).ready(function () {
+		var aud = document.getElementById("logo");
+		aud.onended = function() {
+			window.location.replace("menu.html");
+		};
+    });
+</script>
+
+</body>
+</html>

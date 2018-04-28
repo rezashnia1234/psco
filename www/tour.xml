@@ -1,0 +1,486 @@
+﻿<krpano version="1.19" title="Virtual Tour">
+
+	<include url="skin/vtourskin.xml" />
+	<plugin name="show_vr_setup"
+	        url="skin/blank.png"
+	        align="righttop"
+	        width="60"
+	        height="80"
+	        keep="true"
+	        x=""
+	        y="0"
+	        scalechildren="false"
+			capture="true"
+	        handcursor="true"
+	        zorder="10"
+			onclick="vr_setup();"
+	        />	
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+	<skin_settings maps="false"
+	               maps_type="google"
+	               maps_bing_api_key=""
+	               maps_google_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               webvr="true"
+	               webvr_gyro_keeplookingdirection="false"
+	               webvr_prev_next_hotspots="true"
+	               littleplanetintro="false"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_buttons="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               deeplinking="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="OPENBLEND(0.5, 0.0, 0.75, 0.05, linear)"
+	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
+	               loadscene_blend_next="SLIDEBLEND(0.5,   0, 0.75, linear)"
+	               loadingtext="loading..."
+	               layout_width="100%"
+	               layout_maxwidth="814"
+	               controlbar_width="-24"
+	               controlbar_height="40"
+	               controlbar_offset="20"
+	               controlbar_offset_closed="-40"
+	               controlbar_overlap.no-fractionalscaling="10"
+	               controlbar_overlap.fractionalscaling="0"
+	               design_skin_images="vtourskin.png"
+	               design_bgcolor="0x2D3E50"
+	               design_bgalpha="0.8"
+	               design_bgborder="0"
+	               design_bgroundedge="1"
+	               design_bgshadow="0 4 10 0x000000 0.3"
+	               design_thumbborder_bgborder="3 0xFFFFFF 1.0"
+	               design_thumbborder_padding="2"
+	               design_thumbborder_bgroundedge="0"
+	               design_text_css="color:#FFFFFF; font-family:Arial;"
+	               design_text_shadow="1"
+	               />
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values 
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+
+
+	<!-- startup action - load the first scene -->
+	<action name="startup" autorun="onstart">
+		if(startscene === null OR !scene[get(startscene)], copy(startscene,scene[0].name); );
+		loadscene(get(startscene), null, MERGE);
+		if(startactions !== null, startactions() );
+	</action>
+
+
+	
+	
+	<scene name="scene_00_benquit_hall" title="00_benquit_hall" onstart="" thumburl="panos/00_benquit_hall.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-179.060" vlookat="9.573" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_benquit_hall.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_benquit_hall.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_Entrance_hall_copy" title="00_Entrance_hall copy" onstart="" thumburl="panos/00_Entrance_hall_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_Entrance_hall_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_Entrance_hall_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_event_hall_1" title="00_event_hall_1" onstart="" thumburl="panos/00_event_hall_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="614.503" vlookat="-13.845" fovtype="MFOV" fov="102.041" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_event_hall_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_event_hall_1.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_event_hall_2" title="00_event_hall_2" onstart="" thumburl="panos/00_event_hall_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-107.348" vlookat="-12.120" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_event_hall_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_event_hall_2.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_Fashion_Node" title="00_Fashion_Node" onstart="" thumburl="panos/00_Fashion_Node.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-90.633" vlookat="-9.616" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_Fashion_Node.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_Fashion_Node.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_landscape" title="00_landscape" onstart="" thumburl="panos/00_landscape.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-104.232" vlookat="10.965" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_landscape.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_landscape.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_00_Mosque_Level_copy" title="00_Mosque_Level copy" onstart="" thumburl="panos/00_Mosque_Level_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="92.446" vlookat="-2.312" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/00_Mosque_Level_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/00_Mosque_Level_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_01_MEP" title="01_MEP" onstart="" thumburl="panos/01_MEP.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="84.035" vlookat="-14.119" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_MEP.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/01_MEP.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_01_Mosque_Level_copy" title="01_Mosque_Level copy" onstart="" thumburl="panos/01_Mosque_Level_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-274.274" vlookat="8.484" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/01_Mosque_Level_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/01_Mosque_Level_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_03_GYM" title="03_GYM" onstart="" thumburl="panos/03_GYM.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="217.882" vlookat="23.194" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/03_GYM.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/03_GYM.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_bowling" title="04_bowling" onstart="" thumburl="panos/04_bowling.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-96.835" vlookat="3.334" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_bowling.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_bowling.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_cinema" title="04_cinema" onstart="" thumburl="panos/04_cinema.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="91.711" vlookat="15.322" fovtype="MFOV" fov="127.033" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_cinema.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_cinema.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_Cinema_vip" title="04_Cinema_vip" onstart="" thumburl="panos/04_Cinema_vip.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-269.177" vlookat="17.422" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_Cinema_vip.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_Cinema_vip.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_food_court_1" title="04_food_court_1" onstart="" thumburl="panos/04_food_court_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_food_court_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_food_court_1.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_food_court_2" title="04_food_court_2" onstart="" thumburl="panos/04_food_court_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="270.404" vlookat="13.841" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_food_court_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_food_court_2.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_Tropical_Garden_1" title="04_Tropical_Garden_1" onstart="" thumburl="panos/04_Tropical_Garden_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-223.585" vlookat="-6.942" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_Tropical_Garden_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_Tropical_Garden_1.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_04_Tropical_Garden_2" title="04_Tropical_Garden_2" onstart="" thumburl="panos/04_Tropical_Garden_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-95.434" vlookat="31.065" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/04_Tropical_Garden_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/04_Tropical_Garden_2.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_05_Health_Road" title="05_Health_Road" onstart="" thumburl="panos/05_Health_Road.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-99.723" vlookat="30.693" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/05_Health_Road.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/05_Health_Road.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_05_Tennis" title="05_Tennis" onstart="" thumburl="panos/05_Tennis.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/05_Tennis.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/05_Tennis.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_10_ARC_copy" title="10_ARC copy" onstart="" thumburl="panos/10_ARC_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-280.441" vlookat="6.700" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/10_ARC_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/10_ARC_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_10_MEP_copy" title="10_MEP copy" onstart="" thumburl="panos/10_MEP_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="62.952" vlookat="-19.912" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/10_MEP_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/10_MEP_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_20_Parking_copy" title="20_Parking copy" onstart="" thumburl="panos/20_Parking_copy.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-453.604" vlookat="16.819" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/20_Parking_copy.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/20_Parking_copy.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_Hl_Lobby" title="Hl_Lobby" onstart="" thumburl="panos/Hl_Lobby.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-449.376" vlookat="6.946" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/Hl_Lobby.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/Hl_Lobby.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_RT_Dublex" title="RT_Dublex" onstart="" thumburl="panos/RT_Dublex.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="94.954" vlookat="-0.100" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/RT_Dublex.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/RT_Dublex.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_RT_Penthouse_1" title="RT_Penthouse_1" onstart="" thumburl="panos/RT_Penthouse_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="300.611" vlookat="2.542" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/RT_Penthouse_1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/RT_Penthouse_1.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_RT_Penthouse_2" title="RT_Penthouse_2" onstart="" thumburl="panos/RT_Penthouse_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="449.472" vlookat="3.285" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/RT_Penthouse_2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/RT_Penthouse_2.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_RT_Pool" title="RT_Pool" onstart="" thumburl="panos/RT_Pool.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="15.659" vlookat="23.584" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/RT_Pool.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/RT_Pool.tiles/pano_%s.jpg" />
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="video_scene" onstart="plugin[video].play();action(startscene);">
+		<plugin name="video"
+				url.flash="%SWFPATH%/plugins/videoplayer.swf"
+				url.html5="%SWFPATH%/plugins/videoplayer.js"
+				videourl="panos/video.mp4"
+				loop="true"
+				pausedonstart="false"
+				visible="false"
+				use_as_videopano="true"
+				/>
+		<!-- <include url="skin/videointerface.xml" /> -->
+		<image>
+			<sphere url="plugin:video" />
+		</image>
+	</scene>
+</krpano>
