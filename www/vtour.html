@@ -26,8 +26,11 @@
 	<script>
 		var src;
 		src = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
-		embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"only",initvars:{mypath:src},passQueryParameters:true});
-		//embedpano({swf:"tour.swf?0", xml:"tour.xml?0", target:"pano", html5:"only", passQueryParameters:true});
+		alert(src);
+		setTimeout(function () {
+			embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"only",initvars:{mypath:src},passQueryParameters:true});
+			//embedpano({swf:"tour.swf?0", xml:"tour.xml?0", target:"pano", html5:"only", passQueryParameters:true});
+		}, 100);
 	</script>
 </div>
 <div id="placeholder" style0="display:none"></div>

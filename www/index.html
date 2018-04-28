@@ -21,12 +21,6 @@
             <source src="asset/video/logo.mp4" type="video/mp4">
         </video>
     </div>
-	<script>
-		var src;
-		src = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
-		$('#logo source').attr('src', src);
-		$("#logo")[0].load();
-	</script>
 </div>
 
 
@@ -42,6 +36,7 @@ $(document).ready(function () {
 	//	window.location.replace("menu.html");
 	//}, 7000);
 	var aud = document.getElementById("logo");
+	aud.play();
 	aud.onended = function() {
 		window.location.replace("menu.html");
 	};

@@ -36,13 +36,10 @@
 <div class="page">
     <div class="splash-second">
 		<!--controls-->
-        <video autoplay id="logo" >
+        <video autoplay id="logo" webkit-playsinline playsinline >
             <source src="asset/video/intro.mp4" type="video/mp4">
         </video>
-
-        <img src="img/home.png" id="skip"
-             style="z-index: 100000;     z-index: 100000; background-color: rgba(255,255,255,0); padding: 8px;"
-             class="back-icon"/>
+        <img src="img/home.png" id="skip" style="z-index: 100000;     z-index: 100000; background-color: rgba(255,255,255,0); padding: 8px;" class="back-icon"/>
     </div>
 </div>
 
@@ -59,6 +56,14 @@
 			window.location.replace("menu.html");
 		};
     });
+	var src;
+	src = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
+	$('#logo source').attr('src', src + "asset/video/intro.mp4");
+	$("#logo")[0].load();
+	var aud = document.getElementById("logo");
+	aud.play();
+	//<input type="button" value="Play" onclick="document.myMovie.play()">
+	//$('#logo').get(0).play();
 </script>
 
 </body>
