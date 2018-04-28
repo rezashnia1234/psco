@@ -33,7 +33,10 @@
 	function temp_function() {
 		// do something
 	}
-	
+	function goto_menu() {
+		window.location.href = "menu.html";
+		//goto_perv_page('index.html',false);
+	}
 	function goto_home() {
 		//window.location.href = "index.html";
 		goto_perv_page('index.html',false);

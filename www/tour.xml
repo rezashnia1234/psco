@@ -94,10 +94,10 @@
 
 		<view hlookat="-179.060" vlookat="9.573" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_benquit_hall.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_benquit_hall.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_benquit_hall.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_benquit_hall.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -108,10 +108,10 @@
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_Entrance_hall_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_Entrance_hall_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_Entrance_hall_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_Entrance_hall_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -122,10 +122,10 @@
 
 		<view hlookat="614.503" vlookat="-13.845" fovtype="MFOV" fov="102.041" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_event_hall_1.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_event_hall_1.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_event_hall_1.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_event_hall_1.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -136,10 +136,10 @@
 
 		<view hlookat="-107.348" vlookat="-12.120" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_event_hall_2.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_event_hall_2.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_event_hall_2.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_event_hall_2.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -150,10 +150,10 @@
 
 		<view hlookat="-90.633" vlookat="-9.616" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_Fashion_Node.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_Fashion_Node.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_Fashion_Node.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_Fashion_Node.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -164,10 +164,10 @@
 
 		<view hlookat="-104.232" vlookat="10.965" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_landscape.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_landscape.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_landscape.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_landscape.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -178,10 +178,10 @@
 
 		<view hlookat="92.446" vlookat="-2.312" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/00_Mosque_Level_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/00_Mosque_Level_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/00_Mosque_Level_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/00_Mosque_Level_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -192,10 +192,10 @@
 
 		<view hlookat="84.035" vlookat="-14.119" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/01_MEP.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/01_MEP.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/01_MEP.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/01_MEP.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -206,10 +206,10 @@
 
 		<view hlookat="-274.274" vlookat="8.484" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/01_Mosque_Level_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/01_Mosque_Level_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/01_Mosque_Level_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/01_Mosque_Level_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -220,10 +220,10 @@
 
 		<view hlookat="217.882" vlookat="23.194" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/03_GYM.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/03_GYM.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/03_GYM.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/03_GYM.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -234,10 +234,10 @@
 
 		<view hlookat="-96.835" vlookat="3.334" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_bowling.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_bowling.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_bowling.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_bowling.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -248,10 +248,10 @@
 
 		<view hlookat="91.711" vlookat="15.322" fovtype="MFOV" fov="127.033" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_cinema.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_cinema.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_cinema.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_cinema.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -262,10 +262,10 @@
 
 		<view hlookat="-269.177" vlookat="17.422" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_Cinema_vip.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_Cinema_vip.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_Cinema_vip.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_Cinema_vip.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -276,10 +276,10 @@
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_food_court_1.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_food_court_1.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_food_court_1.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_food_court_1.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -290,10 +290,10 @@
 
 		<view hlookat="270.404" vlookat="13.841" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_food_court_2.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_food_court_2.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_food_court_2.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_food_court_2.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -304,10 +304,10 @@
 
 		<view hlookat="-223.585" vlookat="-6.942" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_Tropical_Garden_1.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_Tropical_Garden_1.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_Tropical_Garden_1.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_Tropical_Garden_1.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -318,10 +318,10 @@
 
 		<view hlookat="-95.434" vlookat="31.065" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/04_Tropical_Garden_2.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/04_Tropical_Garden_2.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/04_Tropical_Garden_2.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/04_Tropical_Garden_2.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -332,10 +332,10 @@
 
 		<view hlookat="-99.723" vlookat="30.693" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/05_Health_Road.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/05_Health_Road.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/05_Health_Road.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/05_Health_Road.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -346,10 +346,10 @@
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/05_Tennis.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/05_Tennis.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/05_Tennis.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/05_Tennis.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -360,10 +360,10 @@
 
 		<view hlookat="-280.441" vlookat="6.700" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/10_ARC_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/10_ARC_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/10_ARC_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/10_ARC_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -374,10 +374,10 @@
 
 		<view hlookat="62.952" vlookat="-19.912" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/10_MEP_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/10_MEP_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/10_MEP_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/10_MEP_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -388,10 +388,10 @@
 
 		<view hlookat="-453.604" vlookat="16.819" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/20_Parking_copy.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/20_Parking_copy.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/20_Parking_copy.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/20_Parking_copy.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -402,10 +402,10 @@
 
 		<view hlookat="-449.376" vlookat="6.946" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/Hl_Lobby.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/Hl_Lobby.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/Hl_Lobby.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/Hl_Lobby.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -416,10 +416,10 @@
 
 		<view hlookat="94.954" vlookat="-0.100" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/RT_Dublex.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/RT_Dublex.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/RT_Dublex.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/RT_Dublex.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -430,10 +430,10 @@
 
 		<view hlookat="300.611" vlookat="2.542" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/RT_Penthouse_1.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/RT_Penthouse_1.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/RT_Penthouse_1.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/RT_Penthouse_1.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -444,10 +444,10 @@
 
 		<view hlookat="449.472" vlookat="3.285" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/RT_Penthouse_2.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/RT_Penthouse_2.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/RT_Penthouse_2.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/RT_Penthouse_2.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -458,10 +458,10 @@
 
 		<view hlookat="15.659" vlookat="23.584" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-		<preview url="panos/RT_Pool.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/RT_Pool.tiles/preview.jpg" />
 
 		<image>
-			<cube url="panos/RT_Pool.tiles/pano_%s.jpg" />
+			<cube url="%$mypath%/panos/RT_Pool.tiles/pano_%s.jpg" />
 		</image>
 
 		<!-- place your scene hotspots here -->
@@ -472,7 +472,7 @@
 		<plugin name="video"
 				url.flash="%SWFPATH%/plugins/videoplayer.swf"
 				url.html5="%SWFPATH%/plugins/videoplayer.js"
-				videourl="panos/video.mp4"
+				videourl="%$mypath%/panos/video.mp4"
 				loop="true"
 				pausedonstart="false"
 				visible="false"

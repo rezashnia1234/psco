@@ -41,7 +41,7 @@
 			var mc = new Hammer(document.body);
 			mc.on("swiperight", function(ev) {
 				brightness.setKeepScreenOn(false);
-				goto_home();
+				goto_menu();
 			});
 
 		}
@@ -161,7 +161,7 @@
 			
 			//FastClick.attach(document.body);
 			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				document.addEventListener("backbutton", goto_home, false);
+				document.addEventListener("backbutton", goto_menu, false);
 			}
 			
 			check_net(true,true,false);
@@ -224,7 +224,7 @@
 			//alert("complete cached : " + data.cached);
 			navigator.notification.alert(
 				'فرایند دانلود با موفقیت به اتمام رسید.',  // message
-				goto_home,         // callback
+				goto_menu,         // callback
 				'توجه',            // title
 				'تائید'                  // buttonName
 			);
@@ -249,7 +249,7 @@
 			brightness.setKeepScreenOn(false);
 			navigator.notification.alert(
 				'لغو دانلود فایل',  // message
-				goto_home,         // callback
+				goto_menu,         // callback
 				'توجه',            // title
 				'تائید'                  // buttonName
 			);
