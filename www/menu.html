@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="./asset/css/framework7.min.css">
     <link rel="stylesheet" href="./asset/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+	<script>
+			setTimeout(function(){
+				if(window.localStorage.getItem('pano_localPath') == null)
+				{
+					window.location.href = "download.html";
+				}
+			}, 1100);
+	</script>
 </head>
 <body>
 
