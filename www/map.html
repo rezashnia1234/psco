@@ -8,6 +8,11 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<script src="cordova.js"></script>
+	<script>
+		var pano_localPath;
+		pano_localPath = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
+		alert(pano_localPath);
+	</script>
 
 	
     <!-- <link rel="stylesheet" href="./asset/css/reset.css"> -->
@@ -1076,7 +1081,7 @@
         var krpano;
 		
         setTimeout(function () {
-			embedpano({swf: "tour.swf", xml: "tour.xml?0", target: "pano", html5: "only", passQueryParameters: true});
+			embedpano({swf:"tour.swf", xml:"tour.xml", target:"pano", html5:"only",initvars:{mypath:pano_localPath},passQueryParameters:true});
         }, 1000);
         setTimeout(function () {
             krpano = document.getElementById('krpanoSWFObject');
