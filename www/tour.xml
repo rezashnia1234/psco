@@ -90,6 +90,7 @@
 
 	
 	
+	
 	<scene name="scene_00_benquit_hall" title="00_benquit_hall" onstart="" thumburl="panos/00_benquit_hall.tiles/thumb.jpg" lat="" lng="" heading="">
 
 		<view hlookat="-179.060" vlookat="9.573" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
@@ -106,7 +107,7 @@
 
 	<scene name="scene_00_Entrance_hall_copy" title="00_Entrance_hall copy" onstart="" thumburl="panos/00_Entrance_hall_copy.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-92.252" vlookat="3.011" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/00_Entrance_hall_copy.tiles/preview.jpg" />
 
@@ -162,7 +163,7 @@
 
 	<scene name="scene_00_landscape" title="00_landscape" onstart="" thumburl="panos/00_landscape.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-104.232" vlookat="10.965" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-0.518" vlookat="4.865" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/00_landscape.tiles/preview.jpg" />
 
@@ -232,7 +233,7 @@
 
 	<scene name="scene_04_bowling" title="04_bowling" onstart="" thumburl="panos/04_bowling.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-96.835" vlookat="3.334" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-0.532" vlookat="8.565" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/04_bowling.tiles/preview.jpg" />
 
@@ -246,7 +247,7 @@
 
 	<scene name="scene_04_cinema" title="04_cinema" onstart="" thumburl="panos/04_cinema.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="91.711" vlookat="15.322" fovtype="MFOV" fov="127.033" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="323.603" vlookat="8.351" fovtype="MFOV" fov="127.033" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/04_cinema.tiles/preview.jpg" />
 
@@ -302,7 +303,7 @@
 
 	<scene name="scene_04_Tropical_Garden_1" title="04_Tropical_Garden_1" onstart="" thumburl="panos/04_Tropical_Garden_1.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-223.585" vlookat="-6.942" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-72.762" vlookat="17.678" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/04_Tropical_Garden_1.tiles/preview.jpg" />
 
@@ -316,7 +317,7 @@
 
 	<scene name="scene_04_Tropical_Garden_2" title="04_Tropical_Garden_2" onstart="" thumburl="panos/04_Tropical_Garden_2.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-95.434" vlookat="31.065" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="178.409" vlookat="11.499" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/04_Tropical_Garden_2.tiles/preview.jpg" />
 
@@ -330,7 +331,7 @@
 
 	<scene name="scene_05_Health_Road" title="05_Health_Road" onstart="" thumburl="panos/05_Health_Road.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="-99.723" vlookat="30.693" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="144.631" vlookat="29.284" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/05_Health_Road.tiles/preview.jpg" />
 
@@ -344,7 +345,7 @@
 
 	<scene name="scene_05_Tennis" title="05_Tennis" onstart="" thumburl="panos/05_Tennis.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="-80.257" vlookat="58.291" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="%$mypath%/panos/05_Tennis.tiles/preview.jpg" />
 
