@@ -18,7 +18,7 @@
 <div class="page" style="background-color: #e14612 !important;">
     <div class="splash-second">
 		<div style="position:absolute;left:0;top:0;width:100px;height:100px;background-color:#e14612;z-index: -1;" onclick='var aud = document.getElementById("logo");aud.play();'></div>
-        <video autoplay muted id="logo" webkit-playsinline playsinline>
+        <video autoplay2 muted id="logo" webkit-playsinline playsinline>
             <source src="asset/video/logo.mp4" type="video/mp4">
         </video>
     </div>
@@ -42,7 +42,7 @@ $(document).ready(function () {
 		//window.location.replace("menu.html");
 	}, 1500);
 	var aud = document.getElementById("logo");
-	aud.stop();
+	//aud.pause();
 	aud.onended = function() {
 		window.location.replace("menu.html");
 	};
