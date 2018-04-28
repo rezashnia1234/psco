@@ -57,8 +57,8 @@
 		};
     });
 	var src;
-	src = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
-	$('#logo source').attr('src', src + "asset/video/intro.mp4");
+	pano_localPath = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
+	$('#logo source').attr('src', pano_localPath + "asset/video/intro.mp4");
 	$("#logo")[0].load();
 	var aud = document.getElementById("logo");
 	aud.play();
