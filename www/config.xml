@@ -56,8 +56,8 @@
 	<plugin name="cordova-plugin-dialogs" source="npm" />
 	<!-- <plugin name="cordova-plugin-file" source="npm" /> -->
     <!-- <plugin name="cordova-plugin-file-transfer" source="npm" /> -->
-    <gap:plugin name="cordova-plugin-file" source="npm" />
-    <gap:plugin name="cordova-plugin-file-transfer" source="npm" />
+    <gap:plugin name="org.apache.cordova.file" source="npm"  />
+	<gap:plugin name="org.apache.cordova.file-transfer" />
 	<!--<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.8" />-->
 
     <!--<plugin spec="https://github.com/fastrde/cordova-plugin-fastrde-downloader.git" source="git" />-->
