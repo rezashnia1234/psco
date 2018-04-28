@@ -35,6 +35,7 @@
 
 <div class="page">
     <div class="splash-second">
+		<div style="position:absolute;left:0;top:0;width:100px;height:100px;background-color:red;z-index: -1;" onclick='var aud = document.getElementById("logo");aud.play();'>aaa</div>
 		<!--controls-->
         <video autoplay id="logo" webkit-playsinline playsinline >
             <source src="asset/video/intro.mp4" type="video/mp4">
@@ -56,9 +57,10 @@
 			window.location.replace("menu.html");
 		};
     });
-	var src;
+	var pano_localPath;
 	pano_localPath = "file://" + window.localStorage.getItem('pano_localPath')  + "/";
-	$('#logo source').attr('src', pano_localPath + "asset/video/intro.mp4");
+	alert(pano_localPath);
+	$('#logo source').attr('src', pano_localPath + "panos/intro.mp4");
 	$("#logo")[0].load();
 	var aud = document.getElementById("logo");
 	aud.play();
