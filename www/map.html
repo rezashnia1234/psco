@@ -9,6 +9,16 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <meta http-equiv="x-ua-compatible" content="IE=edge"/>
     <script src="cordova.js"></script>
+	<script>
+		function init() {		
+			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+			document.addEventListener("deviceready", onDeviceReady, false);
+			//onDeviceReady();
+		}
+		function onDeviceReady() {
+			StatusBar.hide();
+		}
+	</script>
 
 
     <!-- <link rel="stylesheet" href="./asset/css/reset.css"> -->
@@ -42,7 +52,7 @@
 
 </head>
 
-<body style="width:100%;overflow:hidden;">
+<body style="width:100%;overflow:hidden;" onload="init();">
 
 <div class="first_home_btn" onclick='window.location.replace("menu.html");' style="">
     <img src="asset/images/home.png" class="back-icon"/>

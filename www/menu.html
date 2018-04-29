@@ -12,18 +12,29 @@
     <link rel="stylesheet" href="./asset/css/framework7.min.css">
     <link rel="stylesheet" href="./asset/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <script src="cordova.js"></script>
 	<script>
-			setTimeout(function(){
-				if(window.localStorage.getItem('pano_localPath') == null)
-				{
-					window.location.href = "download.html";
-				}
-				//else
-					//alert(window.localStorage.getItem('pano_localPath'));
-			}, 1100);
+		function init() {		
+			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+			document.addEventListener("deviceready", onDeviceReady, false);
+			//onDeviceReady();
+		}
+		function onDeviceReady() {
+			StatusBar.hide();
+		}
+	</script>
+	<script>
+		setTimeout(function(){
+			if(window.localStorage.getItem('pano_localPath') == null)
+			{
+				window.location.href = "download.html";
+			}
+			//else
+				//alert(window.localStorage.getItem('pano_localPath'));
+		}, 1100);
 	</script>
 </head>
-<body>
+<body onload="init();">
 
 <div class="page" style="background-color: #e14612 !important;">
     <div class="menu">
