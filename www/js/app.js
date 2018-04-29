@@ -79,7 +79,7 @@ $('.show-info').on('click', function () {
 		if (link_title && link_title != "")
 			$('.info .description .btn-pano a').html(link_title + '<img src="img/play.png"/>');
 		else
-			$('.info .description .btn-pano a').html('Play Panaroma<img src="img/play.png"/>');
+			$('.info .description .btn-pano a').html('Panaroma<img src="img/play.png"/>');
     }
     else {
         $('.info .description .btn-pano').css('display', 'none');
@@ -92,7 +92,7 @@ $('.show-info').on('click', function () {
 		if (link_title2 && link_title2 != "")
 			$('.info .description .btn-pano2 a').html(link_title2 + '<img src="img/play.png"/>');
 		else
-			$('.info .description .btn-pano2 a').html('Play Panaroma 2<img src="img/play.png"/>');
+			$('.info .description .btn-pano2 a').html('Panaroma 2<img src="img/play.png"/>');
     }
     else {
         $('.info .description .btn-pano2').css('display', 'none');
