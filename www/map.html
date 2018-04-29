@@ -891,12 +891,14 @@
             // $('#pano-menu').addClass('show_pano');
             glassVR = false;
             $('#glassVR').find('img').attr('src', 'asset/images/vr_off.png');
+			$(".info").style("z-index","-1");
         }
 
         function hide_menu_for_vr() {
             // $('#pano-menu').removeClass('show_pano');
             glassVR = true;
             $('#glassVR').find('img').attr('src', 'asset/images/vr.png');
+			$(".info").style("z-index","10");
         }
 
         //example : change_scene(krpano,"scene_02");
