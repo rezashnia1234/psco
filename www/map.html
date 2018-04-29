@@ -44,7 +44,7 @@
 
 <body style="width:100%;overflow:hidden;">
 
-<div class="" onclick='window.location.replace("menu.html");' style="">
+<div class="first_home_btn" onclick='window.location.replace("menu.html");' style="">
     <img src="asset/images/home.png" class="back-icon"/>
 </div>
 
@@ -900,6 +900,8 @@
             $('#glassVR').find('img').attr('src', 'asset/images/vr.png');
 			$(".info").addClass("hidden_for_vr");
 			$(".active-map").addClass("hidden_for_vr");
+			$(".navigation.back-btn").addClass("hidden_for_vr");
+			$(".first_home_btn").addClass("hidden_for_vr");
         }
 
         //example : change_scene(krpano,"scene_02");
