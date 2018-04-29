@@ -882,7 +882,7 @@
             setTimeout(function () {
                 $("#pano").addClass("show_pano");
                 $("#pano-menu").addClass("show_pano");
-            }, 300);
+            }, 600);
             //$("#pano").removeClass("show_pano");
             //$("#pano-menu").removeClass("show_pano");
         }
@@ -909,6 +909,7 @@
                 $(this).find('img').attr('src', 'asset/images/gyroscope_off.png');
             } else {
                 //krpano.call("switch(plugin[skin_gyro].enabled); if(plugin[skin_gyro].disable, skin_showmap(true));");
+				$(".info").style("z-index","-1");
                 krpano.call("set(plugin[skin_gyro].enabled,true);");
                 gyroscope = true;
                 $(this).find('img').attr('src', 'asset/images/gyroscope.png');
