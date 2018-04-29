@@ -891,14 +891,15 @@
             // $('#pano-menu').addClass('show_pano');
             glassVR = false;
             $('#glassVR').find('img').attr('src', 'asset/images/vr_off.png');
-			$(".info").css("z-index","10");
+			$(".hidden_for_vr").removeClass("hidden_for_vr");
         }
 
         function hide_menu_for_vr() {
             // $('#pano-menu').removeClass('show_pano');
             glassVR = true;
             $('#glassVR').find('img').attr('src', 'asset/images/vr.png');
-			$(".info").css("z-index","-1");
+			$(".info").addClass("hidden_for_vr");
+			$(".active-map").addClass("hidden_for_vr");
         }
 
         //example : change_scene(krpano,"scene_02");
@@ -909,7 +910,6 @@
                 $(this).find('img').attr('src', 'asset/images/gyroscope_off.png');
             } else {
                 //krpano.call("switch(plugin[skin_gyro].enabled); if(plugin[skin_gyro].disable, skin_showmap(true));");
-				$(".info").css("z-index","-1");
                 krpano.call("set(plugin[skin_gyro].enabled,true);");
                 gyroscope = true;
                 $(this).find('img').attr('src', 'asset/images/gyroscope.png');
