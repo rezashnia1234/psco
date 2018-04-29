@@ -13,21 +13,17 @@ $('.target-point').on('click', function () {
     $('.floor-title').text(floorTittle);
 
     $('#base-map').fadeOut();
-    $('#' + target).css('width', '100%');
-    $('#' + target).css('height', '100%');
     $('#' + target).addClass('active-map');
-    $('#' + target).removeClass('hidden');
     $('#' + target).animate({
         opacity: 1,
-    }, 1000, function () {
-        $('#' + target).find('.pin').css('width', '100%');
-        $('#' + target).find('.pin').css('height', '100%');
+    }, 500, function () {
         showNavigation();
+        $('#' + target).removeClass('hidden');
         $('#' + target).find('.pin').animate({
             opacity: 1,
             top: 0,
         }, 500, function () {
-            $('map').imageMapResize();
+
         });
     });
 });
@@ -44,12 +40,10 @@ $('#back-master').on('click', function () {
         $('.active-map').animate({
             opacity: 0,
         }, 1000, function () {
-            $('.active-map').css('width', '0');
-            $('.active-map').css('height', '0');
             $('.active-map').addClass('hidden');
             $('.active-map').removeClass('active-map');
             $('#base-map').fadeIn();
-            $('map').imageMapResize();
+
         });
     });
 });

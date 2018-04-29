@@ -218,4 +218,5 @@ ul, li {
     object-fit: cover !important;
     top: 2.7vw !important;
     left: 3.24vw !important;
+    z-index: 9;
 }
