@@ -790,7 +790,7 @@
                 -->
                 <li id="gyroscope">
                     <a>
-                        <img src="asset/images/gyroscope_off.png"/>
+                        <img src="asset/images/gyroscope.png"/>
                     </a>
                 </li>
 
@@ -822,7 +822,7 @@
         </table>
     </noscript>
     <script>
-        var gyroscope = false;
+        var gyroscope = true;
         var glassVR = false;
         var krpano;
 
@@ -860,7 +860,7 @@
         setTimeout(function () {
             krpano = document.getElementById('krpanoSWFObject');
             //krpano.call("skin_hideskin");
-            krpano.call("set(plugin[skin_gyro].enabled,false);");
+            krpano.call("set(plugin[skin_gyro].enabled,ture);");
 
             document.addEventListener("backbutton", onBackKeyDown, false);
 

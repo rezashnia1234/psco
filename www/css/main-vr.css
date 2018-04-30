@@ -116,7 +116,7 @@ ul, li {
     bottom: 0;
     left: 0;
     width: 11.375vw;
-    background-color: #ffffffb0;
+    /* background-color: #ffffffb0; */
 }
 
 .vr .links img{
@@ -213,8 +213,8 @@ ul, li {
 /*back icon*/
 .back-icon {
     position: absolute !important;
-    width: 4.1vw !important;
-    height: 4.1vw !important;
+    width: 3.5vw !important;
+    height: 3.5vw !important;
     object-fit: cover !important;
     top: 2.7vw !important;
     left: 3.24vw !important;
