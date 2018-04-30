@@ -884,6 +884,12 @@
                 return true;
             }
         }, 2500);
+		
+		setTimeout(function () {
+			krpano.call("set(plugin[skin_gyro].enabled,true);");
+			gyroscope = true;
+			$(this).find('img').attr('src', 'asset/images/gyroscope.png');
+        }, 5000);
 
         function change_scene(e, krpano, scene_name) {
             console.log(scene_name);
