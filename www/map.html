@@ -771,7 +771,7 @@
                 </li>
 
                 <li>
-                    <a onclick='$("#pano").removeClass("show_pano");$("#pano-menu").removeClass("show_pano");krpano.call("plugin[video].stop()");'>
+                    <a class="hidden_in_vr" onclick='$("#pano").removeClass("show_pano");$("#pano-menu").removeClass("show_pano");krpano.call("plugin[video].stop()");'>
                         <img src="img/back-ico.png"/>
                     </a>
                 </li>
@@ -788,7 +788,7 @@
                     </a>
                 </li>
                 -->
-                <li id="gyroscope">
+                <li class="hidden_in_vr" id="gyroscope">
                     <a>
                         <img src="asset/images/gyroscope.png"/>
                     </a>
@@ -918,6 +918,8 @@
 			$(".active-map").addClass("hidden_for_vr");
 			$(".navigation.back-btn").addClass("hidden_for_vr");
 			$(".first_home_btn").addClass("hidden_for_vr");
+			$(".hidden_in_vr").addClass("hidden_for_vr");
+			$("#base-map").addClass("hidden_for_vr");
         }
 
         //example : change_scene(krpano,"scene_02");
@@ -1046,33 +1048,33 @@ function show_image_persian_bath(e)
 	var items = [
 		{
 			src: 'img/slider/pb/1.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/pb/2.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/pb/3.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/pb/4.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/pb/5.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/pb/6.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		}
 	];
 
@@ -1099,18 +1101,18 @@ function show_image_spa(e)
 	var items = [
 		{
 			src: 'img/slider/spa/1.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/spa/2.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		},
 		{
 			src: 'img/slider/spa/3.jpg',
-			w: 940,
-			h: 529
+			w: 1280,
+			h: 720
 		}
 	];
 
@@ -1129,6 +1131,21 @@ function show_image_spa(e)
 	gallery.init();
 }
 </script>
+<style>
+.pswp__button {
+    width: 7vw;
+    height: 7vw;
+    background-size: 33vw 10vw;
+    background-position: -0.5vw -4vw;
+}
+.pswp__counter {
+    font-size: 2vw;
+    height: 6vw;
+    line-height: 4vw;
+    padding: 1.2vw 1vw 1vw 1.7vw;
+    box-sizing: border-box;
+}
+</style>
 <!-- photoswip///////////////////////////////////////////////////////////////-->
 <!-- photoswip///////////////////////////////////////////////////////////////-->
 <!-- photoswip///////////////////////////////////////////////////////////////-->
