@@ -31,6 +31,8 @@
 </script>
 
 <body onload="init();">
+<div class="preloader"></div>
+<style>.preloader{opacity:1;position:absolute !important;width:100% !important;height:100% !important;background-color:#ffffff;z-index:214748001 !important;transition:all .7s cubic-bezier(.175,.885,.32,1.275) 0s  !important;animation: unset !important;}.preloader.display_none{display:none  !important;}</style>
 
 <div class="page">
     <div class="background" style="pointer-events : none;">
@@ -103,6 +105,12 @@
 <script src="./asset/js/framework7.min.js"></script>
 <script src="./asset/js/main.js"></script>
 <script src="./js/navi.js"></script>
+<script>
+	$(document).ready(function () {
+		setTimeout(function(){ jQuery('.preloader').css("opacity","0"); }, 500);
+		setTimeout(function(){ jQuery('.preloader').addClass("display_none"); }, 1400);
+	});
+</script>
 
 </body>
 </html>

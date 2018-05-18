@@ -134,15 +134,17 @@
 
 .info .btn-close {
     position: absolute;
-    right: 0;
+    right: 3vw;
     bottom: 18.9vw;
     padding: 0.8125vw;
-    width: 7.3125vw;
-    height: 7.3125vw;
+    width: 3.3125vw;
+    height: 3.3125vw;
     overflow: hidden;
     transition: background-color 0.5s ease;
 }
-
+.btn-close img#btn-close-info {
+    width: 100%;
+}
 .none {
     display: none;
 }

@@ -51,6 +51,8 @@
 </head>
 
 <body style="width:100%;overflow:hidden;" onload="init();">
+<div class="preloader"></div>
+<style>.preloader{opacity:1;position:absolute !important;width:100% !important;height:100% !important;background-color:#ffffff;z-index:214748001 !important;transition:all .7s cubic-bezier(.175,.885,.32,1.275) 0s  !important;animation: unset !important;}.preloader.display_none{display:none  !important;}</style>
 
 <div class="first_home_btn" onclick='window.location.replace("menu.html");' style="">
     <img src="asset/images/home.png" class="back-icon"/>
@@ -1148,6 +1150,11 @@ function show_image_spa(e)
 <!-- photoswip///////////////////////////////////////////////////////////////-->
 <!-- photoswip///////////////////////////////////////////////////////////////-->
 <!-- photoswip///////////////////////////////////////////////////////////////-->
-
+<script>
+$(document).ready(function () {
+	setTimeout(function(){ jQuery('.preloader').css("opacity","0"); }, 500);
+	setTimeout(function(){ jQuery('.preloader').addClass("display_none"); }, 1400);
+});
+</script>
 </body>
 </html>

@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./asset/css/framework7.min.css">
     <link rel="stylesheet" href="./asset/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="./asset/css/main.css">
-	
 	<script src="cordova.js"></script>
 	<script>
 		function init() {		
@@ -33,6 +32,8 @@
 
 </head>
 <body onload="init();">
+<div class="preloader"></div>
+<style>.preloader{opacity:1;position:absolute !important;width:100% !important;height:100% !important;background-color:#000000;z-index:214748001 !important;transition:all .7s cubic-bezier(.175,.885,.32,1.275) 0s  !important;animation: unset !important;}.preloader.display_none{display:none  !important;}</style>
 
 <div class="page" style="background-color: #000000 !important;">
     <div class="splash-second">
@@ -49,6 +50,10 @@
 <script src="./asset/js/framework7.min.js"></script>
 <script src="./asset/js/main.js"></script>
 <script>
+	$(document).ready(function () {
+		setTimeout(function(){ jQuery('.preloader').css("opacity","0"); }, 500);
+		setTimeout(function(){ jQuery('.preloader').addClass("display_none"); }, 1400);
+	});
     $('#skip').on('click', function () {
         window.location.replace("menu.html");
     });
