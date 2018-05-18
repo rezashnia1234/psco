@@ -22,23 +22,7 @@
 	<!-- <preference name='phonegap-version'			value='cli-7.1.0' /> -->
 	<!-- <preference name='phonegap-version'			value='cli-8.0.0' /> -->
     <preference name="phonegap-version"					value="cli-7.0.1" />
-	<preference name='pgb-builder-version'				value='1' />
-	<preference name="orientation"						value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
-	<preference name="target-device"					value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-	<preference name="fullscreen"						value="true" />           <!-- all: hides the status bar at the top of the screen -->
-	<preference name="prerendered-icon"					value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
-	<preference name="ios-statusbarstyle"				value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
-	<preference name="detect-data-types"				value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
-	<preference name="exit-on-suspend"					value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
-	<preference name="AutoHideSplashScreen"				value="true" />
-	<preference name="disable-cursor"					value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
-	<preference name="android-minSdkVersion"			value="16" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-	<preference name="android-installLocation"			value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-	<preference name="SplashScreenDelay"				value="5000"/>
-	<preference name="FadeSplashScreen"					value="false" />
-	<preference name="ShowSplashScreenSpinner"			value="false"/>
-	<preference name="AllowInlineMediaPlayback"			value="true" />
-	<preference name="MediaPlaybackRequiresUserAction"	value="false"/>
+
 
 	<!-- ???????????????????????????????????????????????????????????????????????????????????? -->
 	<!-- ???????????????????????????????????????????????????????????????????????????????????? -->
@@ -142,22 +126,22 @@
 		<splash density="port-xxxhdpi" src="res/screen/android/drawable-port-xxxhdpi-screen.png" />
 	</platform>
 	<platform name="ios">
-		<icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
-		<icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
-		<icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
-		<icon height="80" platform="ios" src="res/icons/ios/icon-40@2x.png" width="80" />
-		<icon height="50" platform="ios" src="res/icons/ios/icon-50.png" width="50" />
-		<icon height="100" platform="ios" src="res/icons/ios/icon-50@2x.png" width="100" />
-		<icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
-		<icon height="120" platform="ios" src="res/icons/ios/icon-60@2x.png" width="120" />
-		<icon height="180" platform="ios" src="res/icons/ios/icon-60@3x.png" width="180" />
-		<icon height="72" platform="ios" src="res/icons/ios/icon-72.png" width="72" />
-		<icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
-		<icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
-		<icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
-		<icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
-		<icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
-		<icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
+        <icon height="57" platform="ios" src="res/icons/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="res/icons/ios/icon@2x.png" width="114" />
+        <icon height="40" platform="ios" src="res/icons/ios/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="res/icons/ios/icon-40@2x.png" width="80" />
+        <icon height="50" platform="ios" src="res/icons/ios/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="res/icons/ios/icon-50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="res/icons/ios/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="res/icons/ios/icon-60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="res/icons/ios/icon-60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="res/icons/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="res/icons/ios/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="res/icons/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="res/icons/ios/icon-76@2x.png" width="152" />
+        <icon height="29" platform="ios" src="res/icons/ios/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="res/icons/ios/icon-small@2x.png" width="58" />
+        <icon height="87" platform="ios" src="res/icons/ios/icon-small@3x.png" width="87" />
 		
 		<splash src="res/screen/ios/Default@2x~iphone~anyany.png" />
 		<splash src="res/screen/ios/Default@2x~iphone~comany.png" />
