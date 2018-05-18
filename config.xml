@@ -68,7 +68,7 @@
 	<plugin name="cordova-plugin-media" source="npm" />
 	<plugin name="cordova-plugin-network-information" source="npm" />
 	<!-- <plugin name="cordova-plugin-splashscreen" source="npm" /> -->
-	<plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+	<plugin name="cordova-plugin-splashscreen" spec="latest" />
 	
 
     <!-- Third party plugins -->
