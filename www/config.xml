@@ -159,14 +159,14 @@
 		<icon height="58" platform="ios" src="images/splash/icons/ios/icon-small@2x.png" width="58" />
 		<icon height="87" platform="ios" src="images/splash/icons/ios/icon-small@3x.png" width="87" />
 		
-		<splash src="images/splash/screen/ios/Default@2x~iphone~anyany.png" />
-		<splash src="images/splash/screen/ios/Default@2x~iphone~comany.png" />
-		<splash src="images/splash/screen/ios/Default@2x~iphone~comcom.png" />
-		<splash src="images/splash/screen/ios/Default@3x~iphone~anyany.png" />
-		<splash src="images/splash/screen/ios/Default@3x~iphone~anycom.png" />
-		<splash src="images/splash/screen/ios/Default@3x~iphone~comany.png" />
-		<splash src="images/splash/screen/ios/Default@2x~ipad~anyany.png" />
-		<splash src="images/splash/screen/ios/Default@2x~ipad~comany.png" />
+		<splash src="images/splash/screens/ios/Default@2x~iphone~anyany.png" />
+		<splash src="images/splash/screens/ios/Default@2x~iphone~comany.png" />
+		<splash src="images/splash/screens/ios/Default@2x~iphone~comcom.png" />
+		<splash src="images/splash/screens/ios/Default@3x~iphone~anyany.png" />
+		<splash src="images/splash/screens/ios/Default@3x~iphone~anycom.png" />
+		<splash src="images/splash/screens/ios/Default@3x~iphone~comany.png" />
+		<splash src="images/splash/screens/ios/Default@2x~ipad~anyany.png" />
+		<splash src="images/splash/screens/ios/Default@2x~ipad~comany.png" />
 	</platform>
 	
 	
